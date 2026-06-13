@@ -360,55 +360,6 @@ Treasury-adjusted Sharpe: 0.837631
 Matched equal-weight Treasury Sharpe: 0.499941
 ```
 
-### `ablation`
-
-Locks the with-GNC versus no-GNC ablation for the final USD/no-Sri-Lanka suite.
-
-Canonical local bundle:
-
-```text
-data/outputs/return_forecasting/gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612_v2/
-```
-
-Final command:
-
-```bash
-PYTHONPATH=. python3 -m analysis.return_forecasting.run_gnc_ablation \
-  --country-gnc final_runs/tau04_hk_28623539/daily_container_index/country_gnc.csv \
-  --market-indices final_runs/tau04_hk_28623539/inputs/all_market_indices_with_hong_kong.csv \
-  --fx-rates final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539/inputs/country_fx_rates_usd_with_hong_kong.csv \
-  --selected-model-json pipelines/final_selected_model_tau04_bd5d48e.json \
-  --cleaned-model-id 03_bce_dice_group_100ep_20260521_204006 \
-  --cleaned-model-threshold 0.4 \
-  --exclude-countries "Sri Lanka" \
-  --out data/outputs/return_forecasting \
-  --suite-id gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612_v2
-```
-
-Output contract:
-
-```text
-combined_metrics.csv rows: 60
-gnc_delta_metrics.csv rows: 30
-Feature sets: with_gnc, no_gnc
-combined_metrics.csv SHA256: eea339e76482e4842d96eab21affb3efe46f43df7ee90896ddf2452ed855c7cf
-gnc_delta_metrics.csv SHA256: 874c8755027b54f58476e54b76225980388bbf9f57fe3ea328a1d4cd151c72aa
-config.json SHA256: 7952dbf29ca92fcf98d4b4c7a0f7255398e1af7cd2761165b32c3c0e4a97b9f9
-input_fingerprints.json SHA256: f3656810769560c38868b1034ba3e64716d87ef1bac52a15534995f9d2bb902c
-```
-
-Interpretation:
-
-```text
-rmse_improvement_from_gnc = RMSE(no GNC) - RMSE(with GNC)
-direction_delta_from_gnc = DirAcc(with GNC) - DirAcc(no GNC)
-
-Positive values mean GNC improves the metric. For the four active forecast
-models, RMSE deltas range from -0.005013 to +0.000039, and directional
-accuracy deltas range from -0.177019 to +0.004033. The evidence does not show
-a robust positive forecasting contribution from GNC features in this ablation.
-```
-
 ### `figures-tables`
 
 Regenerates report-facing figures and MAD `.tex` tables from locked evidence.
@@ -499,9 +450,6 @@ Equal-weight Treasury Sharpe 0.473 as the final benchmark
 4,795 port-month observations
 4,823 port-month observations
 0.630502 as the final tau=0.4 test Dice
-data/outputs/return_forecasting/gnc_ablation_20260522/ as final GNC ablation evidence
-data/outputs/return_forecasting/gnc_ablation_tau04_bd5d48e_20260612/ as final GNC ablation evidence
-data/outputs/return_forecasting/gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612/ as final GNC ablation evidence
 ```
 
 Scripts with old defaults are not final entrypoints:

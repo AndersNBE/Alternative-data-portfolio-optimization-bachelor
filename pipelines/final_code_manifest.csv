@@ -19,7 +19,6 @@ analysis/build_index_report.py,support,container-gnc,Optional visual report for 
 analysis/return_forecasting/run_final_usd19_mad_suite.py,active,forecast-mad,Final frozen bd5d48e USD19 no-Sri-Lanka suite materializer and validator,forecast-mad
 analysis/return_forecasting/run_cleaned_research_suite.py,active,forecast-mad,Forecast and MAD engine with final tau04 bundle and selected-model defaults; tracker pins USD FX and Sri Lanka exclusion args,forecast-mad
 analysis/return_forecasting/apply_final_treasury_adjustment.py,active,forecast-mad,Final Treasury excess-return adjustment for a recomputed USD19 MAD suite,forecast-mad
-analysis/return_forecasting/run_gnc_ablation.py,active,ablation,Final with-GNC versus no-GNC ablation runner using the locked selected-model default and explicit USD19 args,ablation
 analysis/return_forecasting/build_final_mad_tables.py,active,figures-tables,Final five-table MAD tex generator for bd5d48e USD19 evidence,figures-tables
 report_regen_2026-06-11/regen_segmentation_figs_tau04.py,active,figures-tables,Regenerates supervised tau04 segmentation figures,figures-tables
 report_regen_2026-06-11/regen_panels_tau04.py,active,figures-tables,Regenerates qualitative panels from cb031ac-equivalent code and 1b6c343 predictions,figures-tables

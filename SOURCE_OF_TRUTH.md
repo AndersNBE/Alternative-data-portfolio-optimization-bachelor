@@ -151,64 +151,6 @@ Equal-weight raw max drawdown: -0.235974
 Mean turnover: 0.525705
 ```
 
-GNC ablation closure for the final USD/no-Sri-Lanka forecast suite:
-
-```text
-Canonical local bundle: data/outputs/return_forecasting/gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612_v2/
-Generated: 2026-06-12
-Source basis: final_runs/tau04_hk_28623539/ (provenance bd5d48e)
-Return currency: USD
-Excluded countries: Sri Lanka
-Operating threshold: tau = 0.4
-Forecast suite: usd19_no_sri_lanka_28623539
-Models: historical_mean, always_positive, ols_predictive, elastic_net_panel, distributed_lag, random_forest_panel
-Horizons: 1, 2, 3, 4, 5
-Output rows: 60 combined metrics, 30 GNC-delta rows
-```
-
-GNC ablation output hashes:
-
-```text
-combined_metrics.csv SHA256: eea339e76482e4842d96eab21affb3efe46f43df7ee90896ddf2452ed855c7cf
-gnc_delta_metrics.csv SHA256: 874c8755027b54f58476e54b76225980388bbf9f57fe3ea328a1d4cd151c72aa
-summary.md SHA256: 99cb5a2cc7cd9f760b447de81123e1ca4c433e21741b7bce8c7e60122382242d
-config.json SHA256: 7952dbf29ca92fcf98d4b4c7a0f7255398e1af7cd2761165b32c3c0e4a97b9f9
-input_fingerprints.json SHA256: f3656810769560c38868b1034ba3e64716d87ef1bac52a15534995f9d2bb902c
-```
-
-GNC ablation input fingerprints:
-
-```text
-country_gnc.csv SHA256: 9cf8390cbfd3dda6d588037973d76d6413a44e186867d614881205f65a594531
-selected_model_tau04_bd5d48e.json SHA256: 530e2c435b8105a26e40822b0a5b3e9355837003ae1f990f3867e9b88aac7c84
-all_market_indices_with_hong_kong.csv SHA256: 50cb1d5313ba4d9e38c2851f46402125d5de28b6ec0bcb2214de87230f695f46
-country_fx_rates_usd_with_hong_kong.csv SHA256: 5adee2fbba91bedfb215434c40559f45dd781808b1146d50df3bf8c87b479fb9
-```
-
-GNC ablation interpretation:
-
-```text
-Delta definitions:
-rmse_improvement_from_gnc = RMSE(no GNC) - RMSE(with GNC)
-direction_delta_from_gnc = DirAcc(with GNC) - DirAcc(no GNC)
-
-Positive values mean GNC improves the metric. For the four active forecast
-models, RMSE deltas range from -0.005013 to +0.000039, and directional
-accuracy deltas range from -0.177019 to +0.004033. The evidence does not show
-a robust positive forecasting contribution from GNC features in this ablation.
-RMSE effects are small; directional effects are model-dependent and mostly
-negative, with the largest no-GNC advantage in OLS at h=1.
-```
-
-Validation against the locked `bd5d48e` forecast suite:
-
-```text
-The with-GNC side of the ablation matches
-final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539/combined_metrics.csv
-to report precision. Max absolute difference: RMSE 0.000037, directional
-accuracy 0.000878.
-```
-
 Container/GNC report-facing facts:
 
 ```text
@@ -239,9 +181,6 @@ Do not use these as final report evidence:
 ```text
 7fd2530 downstream rows
 tau06 or tau = 0.6 as the final downstream operating point
-data/outputs/return_forecasting/gnc_ablation_20260522/ as final GNC ablation evidence
-data/outputs/return_forecasting/gnc_ablation_tau04_bd5d48e_20260612/ as final GNC ablation evidence
-data/outputs/return_forecasting/gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612/ as final GNC ablation evidence
 GNC-MAD Treasury Sharpe 0.999 as the final winner
 Historical-mean no-GNC Sharpe 0.975 as the final baseline
 Pure no-signal MAD Sharpe 0.906 as the final baseline

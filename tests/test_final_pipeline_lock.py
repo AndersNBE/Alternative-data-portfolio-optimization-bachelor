@@ -109,7 +109,6 @@ def test_active_code_manifest_paths_exist_and_stale_is_not_active() -> None:
         "tau06",
         "treasury_sharpe_2026-06-05",
         "cleaned_return_suite_20260522_v2",
-        "gnc_ablation_20260522",
     ]
     allowed_statuses = {"active", "support", "historical", "deletable_candidate"}
     for row in read_rows(CODE):
@@ -142,12 +141,8 @@ def test_final_forecast_runners_default_to_locked_tau04_inputs() -> None:
     cleaned_runner = (REPO / "analysis" / "return_forecasting" / "run_cleaned_research_suite.py").read_text(
         encoding="utf-8"
     )
-    ablation_runner = (REPO / "analysis" / "return_forecasting" / "run_gnc_ablation.py").read_text(
-        encoding="utf-8"
-    )
     assert 'DEFAULT_CLEANED_BUNDLE = Path("final_runs/tau04_hk_28623539/daily_container_index")' in cleaned_runner
     assert 'DEFAULT_SELECTED_MODEL_JSON = Path("pipelines/final_selected_model_tau04_bd5d48e.json")' in cleaned_runner
-    assert "DEFAULT_SELECTED_MODEL_JSON" in ablation_runner
 
 
 def test_artifact_manifest_paths_and_row_counts() -> None:
