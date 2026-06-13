@@ -51,18 +51,18 @@ Generate the five final MAD `.tex` tables:
 make tables
 ```
 
-Regenerate report figures from the locked CSV/PNG bundles:
+Regenerate report figures that do not require raw image/mask files:
 
 ```bash
 make figures
 ```
 
-The qualitative panel generator additionally needs the frozen image/mask root:
+Regenerate the complete figure set, including qualitative panels and test-grid
+overlays, when the frozen image/mask root is available:
 
 ```bash
 FINAL_SEGMENTATION_IMAGE_ROOT=/path/to/Final_Segmentation_LA_Edit \
-  MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp \
-  python3 report_regen_2026-06-11/regen_panels_tau04.py
+  make figures-with-images
 ```
 
 ## Repository Map

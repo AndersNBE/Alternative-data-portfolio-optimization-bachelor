@@ -15,10 +15,10 @@ import numpy as np
 import pandas as pd
 
 AUDIT = Path(__file__).resolve().parent
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 COMMIT = "bd5d48e991e362f5114797622be8ca4b622ea0f2"
 OUT_DIR = AUDIT / "panels_tau04_bundle"
-SOURCE = "Source: Bachelor-portfolio@bd5d48e final_runs/tau04_hk_28623539 (tau=0.4, ROI10)."
+SOURCE = "Source: locked bd5d48e final_runs/tau04_hk_28623539 (tau=0.4, ROI10)."
 
 BG = "#fafaf7"
 INK = "#24292f"

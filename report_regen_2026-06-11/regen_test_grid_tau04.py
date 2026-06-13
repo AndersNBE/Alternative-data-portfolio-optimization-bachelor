@@ -20,7 +20,7 @@ import torch
 
 AUDIT = Path(__file__).resolve().parent
 sys.path.insert(0, str(AUDIT))
-from regen_panels_tau04 import ART, TAU, git_csv, load_model, predict  # noqa: E402
+from regen_panels_tau04 import ART, TAU, git_csv, load_model, predict, segmentation_image_root  # noqa: E402
 
 OUT_DIR = AUDIT / "panels_tau04_bundle"
 BG = "#fafaf7"
@@ -49,6 +49,7 @@ def heat_overlay(rgb: np.ndarray, prob: np.ndarray) -> np.ndarray:
 def main() -> None:
     te = git_csv(f"{ART}/raw/test/predictions.csv")
     te = te.sort_values(["port_id", "timestamp"]).reset_index(drop=True)
+    data_root = segmentation_image_root()
     model = load_model()
     print(f"Model indlæst; {len(te)} test-cases")
 
@@ -69,7 +70,7 @@ def main() -> None:
             for ax in axes.flat[len(chunk):]:
                 ax.axis("off")
             for ax, (_, row) in zip(axes.flat, chunk.iterrows()):
-                rgb, prob, gt = predict(model, row["key"])
+                rgb, prob, gt = predict(model, data_root, row["key"])
                 pred = (prob >= TAU).astype(np.float32)
                 inter = float((pred * gt).sum())
                 denom = float(pred.sum() + gt.sum())

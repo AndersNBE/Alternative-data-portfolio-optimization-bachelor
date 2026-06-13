@@ -1,4 +1,4 @@
-.PHONY: test lock mad tables figures compile
+.PHONY: test lock mad tables figures figures-with-images compile
 
 PYTHON ?= python3
 PYTHONPATH := .
@@ -24,6 +24,13 @@ figures:
 	MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp $(PYTHON) report_regen_2026-06-11/regen_pocket_tau04.py
 	MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp $(PYTHON) report_regen_2026-06-11/regen_pocket_wealth_tau04.py
 	MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp $(PYTHON) report_regen_2026-06-11/regen_final_model03_training_figs.py
+	$(PYTHON) report_regen_2026-06-11/assemble_final_figures.py
+
+figures-with-images:
+	@test -n "$(FINAL_SEGMENTATION_IMAGE_ROOT)" || (echo "Set FINAL_SEGMENTATION_IMAGE_ROOT to the frozen image/mask root" && exit 1)
+	$(MAKE) figures
+	MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp $(PYTHON) report_regen_2026-06-11/regen_panels_tau04.py
+	MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp $(PYTHON) report_regen_2026-06-11/regen_test_grid_tau04.py
 	$(PYTHON) report_regen_2026-06-11/assemble_final_figures.py
 
 compile:

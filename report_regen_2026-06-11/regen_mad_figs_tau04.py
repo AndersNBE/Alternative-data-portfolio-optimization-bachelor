@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 AUDIT = Path(__file__).resolve().parent
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 COMMIT = "bd5d48e991e362f5114797622be8ca4b622ea0f2"
 MAD_CSV = (
     "final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539/"

@@ -33,7 +33,7 @@ spec2 = importlib.util.spec_from_file_location("unet_roi", AUDIT / "unet_roi_cb0
 unet_roi = importlib.util.module_from_spec(spec2)
 spec2.loader.exec_module(unet_roi)
 
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 DATA_ENV = "FINAL_SEGMENTATION_IMAGE_ROOT"
 COMMIT = "1b6c343467e7ea73e13554e65316a2fb3b642694"
 ART = "report_artifacts/supervised_tau04_checks_cb031ac_8a44dd0"

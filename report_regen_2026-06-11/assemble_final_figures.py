@@ -78,7 +78,11 @@ def main() -> None:
 
     manifest = out_dir / "MANIFEST.csv"
     with manifest.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["figure", "source_bundle", "source_path", "sha256"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["figure", "source_bundle", "source_path", "sha256"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(sorted(rows, key=lambda row: row["figure"]))
     print(manifest)

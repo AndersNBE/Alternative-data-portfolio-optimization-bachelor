@@ -21,7 +21,7 @@ import pandas as pd
 AUDIT = Path(__file__).resolve().parent
 OUT_DIRS = [AUDIT / "mad_tau04_bundle"]
 
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 COMMIT = "bd5d48e991e362f5114797622be8ca4b622ea0f2"
 SUITE = "final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539"
 BEST = dict(model_id="distributed_lag", forecast_horizon_months=1, signal_variant="raw", lookback_months=5)

@@ -20,12 +20,12 @@ import pandas as pd
 
 
 AUDIT = Path(__file__).resolve().parent
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 FINAL_RUN_COMMIT = "bd5d48e991e362f5114797622be8ca4b622ea0f2"
 FINAL_RUN_ROOT = "final_runs/tau04_hk_28623539"
 FINAL_RUN_ROI10 = FINAL_RUN_ROOT  # tau04-runnet har ingen runs/roi10-undermappe; ROI10 er selve kørslen
 MAD_SUITE = f"{FINAL_RUN_ROOT}/return_forecasting/usd19_no_sri_lanka_28623539"
-SOURCE_SHORT = "Source: Bachelor-portfolio@bd5d48e final_runs/tau04_hk_28623539 (tau=0.4, ROI10)."
+SOURCE_SHORT = "Source: locked bd5d48e final_runs/tau04_hk_28623539 (tau=0.4, ROI10)."
 OUT_DIR = AUDIT / "container_index_tau04_bundle"
 
 # Run-mappingen (Hong Kong separat) — afviger bevidst fra repoets analysis/port_country_map.py,
@@ -747,7 +747,7 @@ def plot_mad_sharpe_by_method_horizon() -> None:
 
 
 def write_manifest() -> None:
-    source_root = f"regenerated from Bachelor-portfolio@bd5d48e:{FINAL_RUN_ROOT}"
+    source_root = f"regenerated from locked bd5d48e:{FINAL_RUN_ROOT}"
     port_source = f"{source_root}/daily_container_index/port_timeseries.csv"
     country_source = f"{source_root}/daily_container_index/country_gnc.csv"
     mad_source = f"{source_root}/return_forecasting/usd19_no_sri_lanka_28623539/mad_portfolio_cleaned/portfolio_metrics_treasury_adjusted.csv"

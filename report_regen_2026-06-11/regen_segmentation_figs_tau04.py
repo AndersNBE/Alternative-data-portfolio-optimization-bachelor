@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 
 AUDIT = Path(__file__).resolve().parent
-REPO = AUDIT.parent / "Bachelor-portfolio"
+REPO = AUDIT.parent
 COMMIT = "1b6c343467e7ea73e13554e65316a2fb3b642694"
 ART = "report_artifacts/supervised_tau04_checks_cb031ac_8a44dd0"
 OUT_DIR = AUDIT / "segmentation_tau04_bundle"

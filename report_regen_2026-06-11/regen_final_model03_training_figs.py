@@ -13,7 +13,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-REPO = ROOT.parent / "Bachelor-portfolio"
+REPO = ROOT.parent
 COMMIT = "cb031ac4deffdb3a91aabb4b5f61186ca9e3ab34"
 METRICS_REL = "final_runs/full_gode_havnebilleder_tau06_final_2026_06_05/model/metrics.csv"
 OUT_DIR = ROOT / "FinalFigures"

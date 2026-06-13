@@ -43,18 +43,13 @@ table_mad_baseline_comparison_treasury.tex
 make figures
 ```
 
-The panel command that requires raw frozen image/mask files is intentionally not part of `make figures`:
+The panel and test-grid commands that require raw frozen image/mask files are
+intentionally not part of `make figures`. Run the complete figure target when
+that root is available:
 
 ```bash
 FINAL_SEGMENTATION_IMAGE_ROOT=/path/to/Final_Segmentation_LA_Edit \
-  MPLCONFIGDIR=/tmp/mpl-cache-codex XDG_CACHE_HOME=/tmp \
-  python3 report_regen_2026-06-11/regen_panels_tau04.py
-```
-
-After running panel generation, assemble everything:
-
-```bash
-python3 report_regen_2026-06-11/assemble_final_figures.py
+  make figures-with-images
 ```
 
 ## Data Refresh Boundary
