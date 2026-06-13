@@ -67,11 +67,6 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict]:
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Conservative pooled ARX distributed-lag ridge",
-        "research_basis": (
-            "Conservative pooled autoregressive distributed-lag forecasting "
-            "with constrained GNC lag weights, ridge shrinkage, historical-mean "
-            "forecast combination, and Campbell-Thompson-style forecast bounds."
-        ),
         "feature_columns": feature_columns,
         "config": cfg,
     }

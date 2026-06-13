@@ -131,11 +131,6 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict]:
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Expanding-window regularized panel regression with country fixed effects",
-        "research_basis": [
-            "Gu, Kelly, and Xiu (2020) motivate machine-learning return prediction with many signals.",
-            "De Mol, Giannone, and Reichlin (2008) motivate shrinkage for high-dimensional forecasting panels.",
-            "Welch and Goyal (2008) and Rapach, Strauss, and Zhou (2010) motivate strict OOS evaluation, historical-mean discipline, and forecast shrinkage under instability.",
-        ],
         "feature_columns": list(feature_columns),
         "config": _json_safe(cfg),
     }

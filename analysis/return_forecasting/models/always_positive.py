@@ -29,10 +29,6 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict[str
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Always-positive directional baseline",
-        "research_basis": [
-            "Simple class-imbalance benchmark for directional return prediction.",
-            "A useful edge check because equity index returns are positive in many monthly samples.",
-        ],
         "feature_columns": [],
         "config": dict(config),
     }

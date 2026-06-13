@@ -39,12 +39,7 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict[str
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Country historical mean with pooled fallback",
-        "research_basis": [
-            "Historical-average benchmark used in out-of-sample return-prediction studies.",
-            "Welch and Goyal (2008) emphasize comparing predictive regressions against the historical mean.",
-        ],
         "feature_columns": [],
         "config": dict(config),
     }
     return pd.DataFrame(rows), meta
-

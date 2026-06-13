@@ -104,23 +104,6 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict]:
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Conservative expanding-window univariate OLS combination",
-        "research_basis": [
-            {
-                "citation": "Yu, Hao, Wu, Zhao and Wang (2023)",
-                "doi": "10.1057/s41599-023-01891-9",
-                "role": "Container-based predictors and simple forecast combination.",
-            },
-            {
-                "citation": "Welch and Goyal (2008)",
-                "doi": "10.1093/rfs/hhm014",
-                "role": "Strict out-of-sample predictive-regression evaluation.",
-            },
-            {
-                "citation": "Campbell and Thompson (2008)",
-                "doi": "10.1093/rfs/hhm055",
-                "role": "Motivation for conservative forecast restrictions.",
-            },
-        ],
         "feature_columns": feature_columns,
         "config": cfg,
     }

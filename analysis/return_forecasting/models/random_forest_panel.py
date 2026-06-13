@@ -209,23 +209,6 @@ def run_model(panel: pd.DataFrame, config: dict) -> tuple[pd.DataFrame, dict]:
     meta = {
         "model_id": MODEL_ID,
         "method_name": "Expanding-window pooled RandomForestRegressor panel",
-        "research_basis": [
-            {
-                "citation": "Gu, Kelly, and Xiu (2020), Empirical Asset Pricing via Machine Learning",
-                "doi": "10.1093/rfs/hhaa009",
-                "role": "Motivates tree ensembles for expected-return prediction through nonlinearities and interactions, while benchmarking against simple forecasts.",
-            },
-            {
-                "citation": "Ciner (2019), Do industry returns predict the stock market? A reprise using the random forest",
-                "doi": "10.1016/j.qref.2018.11.001",
-                "role": "Applies random forests to out-of-sample market-index return forecasting.",
-            },
-            {
-                "citation": "Rapach, Strauss, and Zhou (2013), International stock return predictability: What is the role of the United States?",
-                "doi": "10.1111/jofi.12041",
-                "role": "Supports pooled international equity-index predictability with lagged market information.",
-            },
-        ],
         "feature_columns": feature_columns,
         "config": _json_safe_config(cfg),
     }

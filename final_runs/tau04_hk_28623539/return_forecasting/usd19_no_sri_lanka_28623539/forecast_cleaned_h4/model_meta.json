@@ -2,10 +2,6 @@
   "historical_mean": {
     "model_id": "historical_mean",
     "method_name": "Country historical mean with pooled fallback",
-    "research_basis": [
-      "Historical-average benchmark used in out-of-sample return-prediction studies.",
-      "Welch and Goyal (2008) emphasize comparing predictive regressions against the historical mean."
-    ],
     "feature_columns": [],
     "config": {
       "min_train_months": 36,
@@ -42,10 +38,6 @@
   "always_positive": {
     "model_id": "always_positive",
     "method_name": "Always-positive directional baseline",
-    "research_basis": [
-      "Simple class-imbalance benchmark for directional return prediction.",
-      "A useful edge check because equity index returns are positive in many monthly samples."
-    ],
     "feature_columns": [],
     "config": {
       "min_train_months": 36,
@@ -82,23 +74,6 @@
   "ols_predictive": {
     "model_id": "ols_predictive",
     "method_name": "Conservative expanding-window univariate OLS combination",
-    "research_basis": [
-      {
-        "citation": "Yu, Hao, Wu, Zhao and Wang (2023)",
-        "doi": "10.1057/s41599-023-01891-9",
-        "role": "Container-based predictors and simple forecast combination."
-      },
-      {
-        "citation": "Welch and Goyal (2008)",
-        "doi": "10.1093/rfs/hhm014",
-        "role": "Strict out-of-sample predictive-regression evaluation."
-      },
-      {
-        "citation": "Campbell and Thompson (2008)",
-        "doi": "10.1093/rfs/hhm055",
-        "role": "Motivation for conservative forecast restrictions."
-      }
-    ],
     "feature_columns": [
       "gnc_lag_1",
       "gnc_lag_2",
@@ -119,11 +94,6 @@
   "elastic_net_panel": {
     "model_id": "elastic_net_panel",
     "method_name": "Expanding-window regularized panel regression with country fixed effects",
-    "research_basis": [
-      "Gu, Kelly, and Xiu (2020) motivate machine-learning return prediction with many signals.",
-      "De Mol, Giannone, and Reichlin (2008) motivate shrinkage for high-dimensional forecasting panels.",
-      "Welch and Goyal (2008) and Rapach, Strauss, and Zhou (2010) motivate strict OOS evaluation, historical-mean discipline, and forecast shrinkage under instability."
-    ],
     "feature_columns": [
       "gnc_lag_1",
       "gnc_lag_2",
@@ -192,7 +162,6 @@
   "distributed_lag": {
     "model_id": "distributed_lag",
     "method_name": "Conservative pooled ARX distributed-lag ridge",
-    "research_basis": "Conservative pooled autoregressive distributed-lag forecasting with constrained GNC lag weights, ridge shrinkage, historical-mean forecast combination, and Campbell-Thompson-style forecast bounds.",
     "feature_columns": [
       "return_lag_1",
       "return_lag_2",
@@ -245,23 +214,6 @@
   "random_forest_panel": {
     "model_id": "random_forest_panel",
     "method_name": "Expanding-window pooled RandomForestRegressor panel",
-    "research_basis": [
-      {
-        "citation": "Gu, Kelly, and Xiu (2020), Empirical Asset Pricing via Machine Learning",
-        "doi": "10.1093/rfs/hhaa009",
-        "role": "Motivates tree ensembles for expected-return prediction through nonlinearities and interactions, while benchmarking against simple forecasts."
-      },
-      {
-        "citation": "Ciner (2019), Do industry returns predict the stock market? A reprise using the random forest",
-        "doi": "10.1016/j.qref.2018.11.001",
-        "role": "Applies random forests to out-of-sample market-index return forecasting."
-      },
-      {
-        "citation": "Rapach, Strauss, and Zhou (2013), International stock return predictability: What is the role of the United States?",
-        "doi": "10.1111/jofi.12041",
-        "role": "Supports pooled international equity-index predictability with lagged market information."
-      }
-    ],
     "feature_columns": [
       "gnc_lag_1",
       "gnc_lag_2",
