@@ -74,6 +74,7 @@ FINAL_SEGMENTATION_IMAGE_ROOT=/path/to/Final_Segmentation_LA_Edit \
 - `models/ml/unet/`: U-Net training/inference core code.
 - `report_regen_2026-06-11/`: figure/table regeneration scripts and final plot bundles.
 - `data/inputs/`: final non-secret static inputs.
+- `data/outputs/return_forecasting/final_mad_tables/`: generated final MAD `.tex` table fragments.
 - `data/outputs/return_forecasting/gnc_ablation_tau04_usd19_no_sri_lanka_bd5d48e_20260612_v2/`: final ablation summary outputs.
 - `tests/`: lock tests that prove manifests, row counts, stale-code boundary, checkpoint SHA, and MAD headline values.
 
