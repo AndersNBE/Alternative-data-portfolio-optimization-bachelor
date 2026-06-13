@@ -1,0 +1,41 @@
+run_id: ""
+fail_on_contract_errors: true
+
+paths:
+  # Set BACHELOR_ONEDRIVE_ROOT to your local synced project root.
+  images_dir: "$BACHELOR_ONEDRIVE_ROOT/segmentation/images"
+  masks_dir: "$BACHELOR_ONEDRIVE_ROOT/segmentation/masks"
+  ext: ".png"
+  run_root: "$BACHELOR_ONEDRIVE_ROOT/segmentation/runs"
+
+split:
+  strategy: "temporal_grouped"
+  seed: 42
+  train_ratio: 0.875
+  val_ratio: 0.125
+  test_ratio: 0.0
+  train_end_timestamp: ""
+  test_start_timestamp: "2024-01-01"
+
+train:
+  img_size: 512
+  batch_size: 1
+  lr: 0.0001
+  loss: "bce"
+  epochs: 30
+  threshold: 0.5
+  device: "mps"
+  seed: 42
+  augment: true
+  num_workers: 0
+
+infer:
+  img_size: 512
+  threshold: 0.5
+  batch_size: 1
+  device: "mps"
+  num_workers: 0
+  require_mask: true
+
+aggregation:
+  port_timeseries_name: "port_timeseries.csv"

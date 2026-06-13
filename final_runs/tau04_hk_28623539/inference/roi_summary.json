@@ -1,0 +1,21 @@
+{
+  "num_cases": 39530,
+  "num_cases_port_mapped": 39530,
+  "num_cases_with_roi": 39530,
+  "num_cases_without_roi": 0,
+  "num_cases_empty_roi": 0,
+  "avg_roi_coverage_ratio": 0.1458115465514967,
+  "avg_dice_pre_roi": 0.0,
+  "avg_dice_post_roi": 0.0,
+  "delta_dice": 0.0,
+  "avg_iou_pre_roi": 0.0,
+  "avg_iou_post_roi": 0.0,
+  "delta_iou": 0.0,
+  "avg_precision_pre_roi": 0.0,
+  "avg_precision_post_roi": 0.0,
+  "delta_precision": 0.0,
+  "avg_recall_pre_roi": 0.0,
+  "avg_recall_post_roi": 0.0,
+  "delta_recall": 0.0,
+  "missing_roi_ports": []
+}

@@ -1,0 +1,211 @@
+{
+  "source": "Yahoo Finance via yfinance",
+  "start": "2017-01-01",
+  "end": null,
+  "normalization": "usd_per_local_currency",
+  "formula": "usd_market_log_return = local_market_log_return + log(fx_t / fx_t_minus_1)",
+  "countries": [
+    {
+      "country": "Belgien",
+      "currency": "EUR",
+      "symbol": "EURUSD=X",
+      "quote_convention": "usd_per_local"
+    },
+    {
+      "country": "Brasilien",
+      "currency": "BRL",
+      "symbol": "BRL=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Filippinerne",
+      "currency": "PHP",
+      "symbol": "PHP=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Grækenland",
+      "currency": "EUR",
+      "symbol": "EURUSD=X",
+      "quote_convention": "usd_per_local"
+    },
+    {
+      "country": "Holland",
+      "currency": "EUR",
+      "symbol": "EURUSD=X",
+      "quote_convention": "usd_per_local"
+    },
+    {
+      "country": "Hong Kong",
+      "currency": "HKD",
+      "symbol": "HKD=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Indien",
+      "currency": "INR",
+      "symbol": "INR=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Indonesia",
+      "currency": "IDR",
+      "symbol": "IDR=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Japan",
+      "currency": "JPY",
+      "symbol": "JPY=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Kina",
+      "currency": "CNY",
+      "symbol": "CNY=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Malaysia",
+      "currency": "MYR",
+      "symbol": "MYR=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Singapore",
+      "currency": "SGD",
+      "symbol": "SGD=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Spanien",
+      "currency": "EUR",
+      "symbol": "EURUSD=X",
+      "quote_convention": "usd_per_local"
+    },
+    {
+      "country": "Sri Lanka",
+      "currency": "LKR",
+      "symbol": "LKR=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Sydkorea",
+      "currency": "KRW",
+      "symbol": "KRW=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Taiwan",
+      "currency": "TWD",
+      "symbol": "TWD=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Thailand",
+      "currency": "THB",
+      "symbol": "THB=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "Tyskland",
+      "currency": "EUR",
+      "symbol": "EURUSD=X",
+      "quote_convention": "usd_per_local"
+    },
+    {
+      "country": "UAE",
+      "currency": "AED",
+      "symbol": "AED=X",
+      "quote_convention": "local_per_usd"
+    },
+    {
+      "country": "USA",
+      "currency": "USD",
+      "symbol": null,
+      "quote_convention": "usd"
+    }
+  ],
+  "summary": [
+    {
+      "currency": "EUR",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "BRL",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "PHP",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "HKD",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "INR",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "IDR",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "JPY",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "CNY",
+      "status": "ok",
+      "rows": 2454
+    },
+    {
+      "currency": "MYR",
+      "status": "ok",
+      "rows": 2456
+    },
+    {
+      "currency": "SGD",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "LKR",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "KRW",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "TWD",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "THB",
+      "status": "ok",
+      "rows": 2455
+    },
+    {
+      "currency": "AED",
+      "status": "ok",
+      "rows": 2456
+    },
+    {
+      "currency": "USD",
+      "status": "ok",
+      "rows": 3448
+    }
+  ]
+}

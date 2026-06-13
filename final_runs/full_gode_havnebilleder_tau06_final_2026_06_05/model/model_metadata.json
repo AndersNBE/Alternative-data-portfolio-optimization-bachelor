@@ -1,0 +1,18 @@
+{
+  "final_run_marker": true,
+  "model_role": "Segmentation checkpoint used for all full_gode_havnebilleder tau=0.6 inference runs",
+  "source_training_run": "la_lb_bce_dice_percentile_batch1_20260521_204006",
+  "source_job_id": "28490168",
+  "source_checkpoint_path_local": "external_original_hpc_checkpoint/best.pt",
+  "committed_checkpoint_path": "final_runs/full_gode_havnebilleder_tau06_final_2026_06_05/model/best.pt",
+  "checkpoint_sha256": "876d7bb8a492c23fa448d187ebb11ab756a0a80864e140b5740795b7f30a64fc",
+  "checkpoint_size_bytes": 372517485,
+  "inference_threshold": 0.6,
+  "normalization": "percentile",
+  "loss": "bce_dice",
+  "batch_size": 1,
+  "notes": [
+    "This checkpoint is intentionally separate from models/ml/unet/weights/selected_best.pt because selected_best.pt has a different SHA in the local workspace.",
+    "Use git lfs pull after cloning/pulling to materialize best.pt."
+  ]
+}

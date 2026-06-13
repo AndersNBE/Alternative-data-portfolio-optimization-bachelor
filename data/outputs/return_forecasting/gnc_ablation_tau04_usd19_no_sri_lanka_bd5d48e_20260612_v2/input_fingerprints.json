@@ -1,0 +1,26 @@
+{
+  "country_gnc": {
+    "path": "/tmp/gnc_ablation_tau04_inputs/final_runs/tau04_hk_28623539/daily_container_index/country_gnc.csv",
+    "bytes": 734490,
+    "mtime_ns": 1781103178000000000,
+    "sha256": "9cf8390cbfd3dda6d588037973d76d6413a44e186867d614881205f65a594531"
+  },
+  "selected_model_json": {
+    "path": "data/outputs/return_forecasting/selected_model_tau04_bd5d48e.json",
+    "bytes": 192,
+    "mtime_ns": 1781263139871220384,
+    "sha256": "530e2c435b8105a26e40822b0a5b3e9355837003ae1f990f3867e9b88aac7c84"
+  },
+  "market_indices": {
+    "path": "/tmp/gnc_ablation_tau04_inputs/final_runs/tau04_hk_28623539/inputs/all_market_indices_with_hong_kong.csv",
+    "bytes": 5904125,
+    "mtime_ns": 1781103178000000000,
+    "sha256": "50cb1d5313ba4d9e38c2851f46402125d5de28b6ec0bcb2214de87230f695f46"
+  },
+  "fx_rates": {
+    "path": "/tmp/gnc_ablation_tau04_inputs/final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539/inputs/country_fx_rates_usd_with_hong_kong.csv",
+    "bytes": 2441643,
+    "mtime_ns": 1781103178000000000,
+    "sha256": "5adee2fbba91bedfb215434c40559f45dd781808b1146d50df3bf8c87b479fb9"
+  }
+}

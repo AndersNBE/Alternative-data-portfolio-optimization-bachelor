@@ -1,0 +1,319 @@
+{
+  "historical_mean": {
+    "model_id": "historical_mean",
+    "method_name": "Country historical mean with pooled fallback",
+    "research_basis": [
+      "Historical-average benchmark used in out-of-sample return-prediction studies.",
+      "Welch and Goyal (2008) emphasize comparing predictive regressions against the historical mean."
+    ],
+    "feature_columns": [],
+    "config": {
+      "min_train_months": 36,
+      "min_train_size": 36,
+      "min_pooled_train": 36,
+      "seed": 42,
+      "random_state": 42,
+      "available_feature_columns": [
+        "gnc",
+        "gnc_lag_1",
+        "gnc_lag_2",
+        "gnc_lag_3",
+        "gnc_lag_4",
+        "gnc_lag_5",
+        "gnc_lag_6",
+        "return_lag_1",
+        "return_lag_2",
+        "return_lag_3",
+        "return_lag_4",
+        "return_lag_5",
+        "return_lag_6",
+        "gnc_ma_3",
+        "gnc_ma_6",
+        "gnc_delta_1",
+        "gnc_delta_3",
+        "rolling_vol_3",
+        "rolling_vol_6",
+        "n_ports",
+        "mean_NC",
+        "mean_observations_per_port"
+      ]
+    }
+  },
+  "always_positive": {
+    "model_id": "always_positive",
+    "method_name": "Always-positive directional baseline",
+    "research_basis": [
+      "Simple class-imbalance benchmark for directional return prediction.",
+      "A useful edge check because equity index returns are positive in many monthly samples."
+    ],
+    "feature_columns": [],
+    "config": {
+      "min_train_months": 36,
+      "min_train_size": 36,
+      "min_pooled_train": 36,
+      "seed": 42,
+      "random_state": 42,
+      "available_feature_columns": [
+        "gnc",
+        "gnc_lag_1",
+        "gnc_lag_2",
+        "gnc_lag_3",
+        "gnc_lag_4",
+        "gnc_lag_5",
+        "gnc_lag_6",
+        "return_lag_1",
+        "return_lag_2",
+        "return_lag_3",
+        "return_lag_4",
+        "return_lag_5",
+        "return_lag_6",
+        "gnc_ma_3",
+        "gnc_ma_6",
+        "gnc_delta_1",
+        "gnc_delta_3",
+        "rolling_vol_3",
+        "rolling_vol_6",
+        "n_ports",
+        "mean_NC",
+        "mean_observations_per_port"
+      ]
+    }
+  },
+  "ols_predictive": {
+    "model_id": "ols_predictive",
+    "method_name": "Conservative expanding-window univariate OLS combination",
+    "research_basis": [
+      {
+        "citation": "Yu, Hao, Wu, Zhao and Wang (2023)",
+        "doi": "10.1057/s41599-023-01891-9",
+        "role": "Container-based predictors and simple forecast combination."
+      },
+      {
+        "citation": "Welch and Goyal (2008)",
+        "doi": "10.1093/rfs/hhm014",
+        "role": "Strict out-of-sample predictive-regression evaluation."
+      },
+      {
+        "citation": "Campbell and Thompson (2008)",
+        "doi": "10.1093/rfs/hhm055",
+        "role": "Motivation for conservative forecast restrictions."
+      }
+    ],
+    "feature_columns": [
+      "gnc_lag_1",
+      "gnc_lag_2",
+      "gnc_lag_3"
+    ],
+    "config": {
+      "feature_columns": null,
+      "min_train_size": 36,
+      "min_feature_obs": 30,
+      "default_forecast": 0.0,
+      "variance_epsilon": 1e-12,
+      "forecast_bound_sigma": 1.5,
+      "nonnegative_forecast": false,
+      "shrinkage_weight": 0.35,
+      "combination_method": "median"
+    }
+  },
+  "elastic_net_panel": {
+    "model_id": "elastic_net_panel",
+    "method_name": "Expanding-window regularized panel regression with country fixed effects",
+    "research_basis": [
+      "Gu, Kelly, and Xiu (2020) motivate machine-learning return prediction with many signals.",
+      "De Mol, Giannone, and Reichlin (2008) motivate shrinkage for high-dimensional forecasting panels.",
+      "Welch and Goyal (2008) and Rapach, Strauss, and Zhou (2010) motivate strict OOS evaluation, historical-mean discipline, and forecast shrinkage under instability."
+    ],
+    "feature_columns": [
+      "gnc_lag_1",
+      "gnc_lag_2",
+      "gnc_lag_3",
+      "return_lag_1",
+      "return_lag_2",
+      "rolling_vol_3"
+    ],
+    "config": {
+      "penalty": "elastic_net",
+      "use_cv": true,
+      "alpha": 1.0,
+      "l1_ratio": 0.2,
+      "alpha_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "l1_ratio_grid": [
+        0.05,
+        0.2,
+        0.5
+      ],
+      "cv_splits": 3,
+      "min_train_size": 36,
+      "min_train_months": 36,
+      "min_country_mean_obs": 36,
+      "forecast_signal_weight": 0.25,
+      "signal_weight_min_train_months": 36,
+      "signal_weight_full_train_months": 120,
+      "max_signal_deviation": 0.08,
+      "feature_columns": null,
+      "include_current_gnc": false,
+      "random_state": 42,
+      "max_iter": 50000,
+      "min_pooled_train": 36,
+      "seed": 42,
+      "available_feature_columns": [
+        "gnc",
+        "gnc_lag_1",
+        "gnc_lag_2",
+        "gnc_lag_3",
+        "gnc_lag_4",
+        "gnc_lag_5",
+        "gnc_lag_6",
+        "return_lag_1",
+        "return_lag_2",
+        "return_lag_3",
+        "return_lag_4",
+        "return_lag_5",
+        "return_lag_6",
+        "gnc_ma_3",
+        "gnc_ma_6",
+        "gnc_delta_1",
+        "gnc_delta_3",
+        "rolling_vol_3",
+        "rolling_vol_6",
+        "n_ports",
+        "mean_NC",
+        "mean_observations_per_port"
+      ]
+    }
+  },
+  "distributed_lag": {
+    "model_id": "distributed_lag",
+    "method_name": "Conservative pooled ARX distributed-lag ridge",
+    "research_basis": "Conservative pooled autoregressive distributed-lag forecasting with constrained GNC lag weights, ridge shrinkage, historical-mean forecast combination, and Campbell-Thompson-style forecast bounds.",
+    "feature_columns": [
+      "return_lag_1",
+      "return_lag_2",
+      "gnc_geom_0.7"
+    ],
+    "config": {
+      "return_lags": 2,
+      "gnc_lags": 6,
+      "ridge_alpha": 250.0,
+      "min_pooled_train": 36,
+      "min_mean_train": 6,
+      "country_mean_shrink_k": 24.0,
+      "model_shrinkage": 0.25,
+      "forecast_bound_sigma": 1.0,
+      "geometric_decays": [
+        0.7
+      ],
+      "include_almon_terms": false,
+      "include_country_fixed_effects": true,
+      "min_train_months": 36,
+      "min_train_size": 36,
+      "seed": 42,
+      "random_state": 42,
+      "available_feature_columns": [
+        "gnc",
+        "gnc_lag_1",
+        "gnc_lag_2",
+        "gnc_lag_3",
+        "gnc_lag_4",
+        "gnc_lag_5",
+        "gnc_lag_6",
+        "return_lag_1",
+        "return_lag_2",
+        "return_lag_3",
+        "return_lag_4",
+        "return_lag_5",
+        "return_lag_6",
+        "gnc_ma_3",
+        "gnc_ma_6",
+        "gnc_delta_1",
+        "gnc_delta_3",
+        "rolling_vol_3",
+        "rolling_vol_6",
+        "n_ports",
+        "mean_NC",
+        "mean_observations_per_port"
+      ]
+    }
+  },
+  "random_forest_panel": {
+    "model_id": "random_forest_panel",
+    "method_name": "Expanding-window pooled RandomForestRegressor panel",
+    "research_basis": [
+      {
+        "citation": "Gu, Kelly, and Xiu (2020), Empirical Asset Pricing via Machine Learning",
+        "doi": "10.1093/rfs/hhaa009",
+        "role": "Motivates tree ensembles for expected-return prediction through nonlinearities and interactions, while benchmarking against simple forecasts."
+      },
+      {
+        "citation": "Ciner (2019), Do industry returns predict the stock market? A reprise using the random forest",
+        "doi": "10.1016/j.qref.2018.11.001",
+        "role": "Applies random forests to out-of-sample market-index return forecasting."
+      },
+      {
+        "citation": "Rapach, Strauss, and Zhou (2013), International stock return predictability: What is the role of the United States?",
+        "doi": "10.1111/jofi.12041",
+        "role": "Supports pooled international equity-index predictability with lagged market information."
+      }
+    ],
+    "feature_columns": [
+      "gnc_lag_1",
+      "gnc_lag_2",
+      "gnc_lag_3",
+      "gnc_lag_4",
+      "gnc_lag_5",
+      "gnc_lag_6",
+      "return_lag_1",
+      "return_lag_2",
+      "return_lag_3",
+      "return_lag_4",
+      "return_lag_5",
+      "return_lag_6",
+      "gnc_ma_3",
+      "gnc_ma_6",
+      "gnc_delta_1",
+      "gnc_delta_3",
+      "rolling_vol_3",
+      "rolling_vol_6",
+      "n_ports",
+      "mean_NC",
+      "mean_observations_per_port",
+      "country_code",
+      "month_number",
+      "month_sin",
+      "month_cos",
+      "year",
+      "time_index"
+    ],
+    "config": {
+      "min_train_size": 36,
+      "n_estimators": 300,
+      "max_depth": 3,
+      "min_samples_leaf": 10,
+      "max_features": "sqrt",
+      "bootstrap": true,
+      "random_state": 42,
+      "n_jobs": -1,
+      "winsorize_features": true,
+      "winsorize_target": true,
+      "winsor_lower": 0.02,
+      "winsor_upper": 0.98,
+      "prediction_clip_lower": 0.02,
+      "prediction_clip_upper": 0.98,
+      "shrinkage_to_mean": 0.6,
+      "include_current_gnc": false,
+      "feature_columns": null,
+      "fallback": "country_then_global_mean",
+      "min_train_months": 36,
+      "min_pooled_train": 36,
+      "seed": 42,
+      "available_feature_columns": "['gnc', 'gnc_lag_1', 'gnc_lag_2', 'gnc_lag_3', 'gnc_lag_4', 'gnc_lag_5', 'gnc_lag_6', 'return_lag_1', 'return_lag_2', 'return_lag_3', 'return_lag_4', 'return_lag_5', 'return_lag_6', 'gnc_ma_3', 'gnc_ma_6', 'gnc_delta_1', 'gnc_delta_3', 'rolling_vol_3', 'rolling_vol_6', 'n_ports', 'mean_NC', 'mean_observations_per_port']"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+path,status,stage,reason,owning_command_id
+pipelines/FINAL_PIPELINE_TRACKER.md,active,control,Human runbook and command authority,control-lock
+SOURCE_OF_TRUTH.md,active,control,Short conflict resolution contract,control-lock
+pipelines/final_report_claims.csv,active,control,Report claim matrix,control-lock
+pipelines/final_artifact_manifest.csv,active,control,Artifact lock matrix,control-lock
+pipelines/final_code_manifest.csv,active,control,Active versus historical code matrix,control-lock
+pipelines/run_pipeline.py,active,raw-refresh,Raw refresh orchestrator with explicit final arguments,raw-refresh
+data/code/data_bbox.py,active,raw-refresh,Patch bbox refresh support,raw-refresh
+data/code/Hent_billederne.py,active,raw-refresh,Sentinel image download support,raw-refresh
+data/code/Fjern_skyer_manila_shanghai.py,active,raw-refresh,Cloud QA filter support,raw-refresh
+data/code/Fjern_afskaaret.py,active,raw-refresh,Cutoff QA filter support,raw-refresh
+data/code/analyze_zip_inventory.py,active,raw-refresh,Coverage inventory QA support,raw-refresh
+pipelines/run_segmentation_pipeline.py,support,segmentation-exact,Training refresh wrapper only; final exact claims use cb031ac and 1b6c343 frozen artifacts,segmentation-exact
+models/ml/unet/train.py,support,segmentation-exact,U-Net training engine for refresh runs,segmentation-exact
+models/ml/unet/infer.py,active,full-inference,U-Net inference engine for full corpus reruns,full-inference
+analysis/build_inference_input.py,active,full-inference,Builds full inference input CSV,full-inference
+analysis/build_container_index.py,active,container-gnc,Builds port and country GNC panels,container-gnc
+analysis/build_index_report.py,support,container-gnc,Optional visual report for container index QA,container-gnc
+analysis/return_forecasting/run_final_usd19_mad_suite.py,active,forecast-mad,Final frozen bd5d48e USD19 no-Sri-Lanka suite materializer and validator,forecast-mad
+analysis/return_forecasting/run_cleaned_research_suite.py,active,forecast-mad,Forecast and MAD engine with final tau04 bundle and selected-model defaults; tracker pins USD FX and Sri Lanka exclusion args,forecast-mad
+analysis/return_forecasting/apply_final_treasury_adjustment.py,active,forecast-mad,Final Treasury excess-return adjustment for a recomputed USD19 MAD suite,forecast-mad
+analysis/return_forecasting/run_gnc_ablation.py,active,ablation,Final with-GNC versus no-GNC ablation runner using the locked selected-model default and explicit USD19 args,ablation
+analysis/return_forecasting/build_final_mad_tables.py,active,figures-tables,Final five-table MAD tex generator for bd5d48e USD19 evidence,figures-tables
+report_regen_2026-06-11/regen_segmentation_figs_tau04.py,active,figures-tables,Regenerates supervised tau04 segmentation figures,figures-tables
+report_regen_2026-06-11/regen_panels_tau04.py,active,figures-tables,Regenerates qualitative panels from cb031ac-equivalent code and 1b6c343 predictions,figures-tables
+report_regen_2026-06-11/regen_test_grid_tau04.py,active,figures-tables,Regenerates test heatmap overlay pages,figures-tables
+report_regen_2026-06-11/regen_container_figs_tau04.py,active,figures-tables,Regenerates bd5d48e container and GNC figures,figures-tables
+report_regen_2026-06-11/regen_appendix_gnc_tau04.py,active,figures-tables,Regenerates country-GNC appendix pages,figures-tables
+report_regen_2026-06-11/regen_mad_figs_tau04.py,active,figures-tables,Regenerates bd5d48e MAD overview figures,figures-tables
+report_regen_2026-06-11/regen_best_config_tau04.py,active,figures-tables,Regenerates best configuration MAD figures,figures-tables
+report_regen_2026-06-11/regen_scatter_tau04.py,active,figures-tables,Regenerates risk-return scatter,figures-tables
+report_regen_2026-06-11/regen_pocket_tau04.py,active,figures-tables,Regenerates robust pocket figure,figures-tables
+report_regen_2026-06-11/regen_pocket_wealth_tau04.py,active,figures-tables,Regenerates pocket wealth curves,figures-tables
+report_regen_2026-06-11/regen_final_model03_training_figs.py,active,figures-tables,Regenerates final model03 training dynamics figures,figures-tables
+report_regen_2026-06-11/assemble_final_figures.py,active,figures-tables,Assembles bundle outputs into FinalFigures with manifest,figures-tables
+analysis/return_forecasting/run_mad_transaction_costs.py,support,optional-mad-sensitivity,Only valid with explicit final USD19 --base-dir; old default is not final evidence,none
+analysis/return_forecasting/build_mad_shorting_sensitivity.py,support,optional-mad-sensitivity,Only valid with explicit final USD19 --base-dir; old default is not final evidence,none

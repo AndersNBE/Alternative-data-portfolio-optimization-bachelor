@@ -1,0 +1,37 @@
+﻿{
+    "country_gnc":  {
+                        "path":  "final_runs\\tau04_hk_28623539\\daily_container_index\\country_gnc.csv",
+                        "bytes":  747756,
+                        "mtime_ns":  1781091691246551700,
+                        "sha256":  "f88f9731527ab331ce07537bc8ff674a64806b6bbdf3a2255717488d013a5050"
+                    },
+    "port_timeseries":  {
+                            "path":  "final_runs\\tau04_hk_28623539\\daily_container_index\\port_timeseries.csv",
+                            "bytes":  951817,
+                            "mtime_ns":  1781091691247807600,
+                            "sha256":  "c7540cb869f4be826500883a17211b7275cd4fc5f74edd2f32c2e0f481caeebb"
+                        },
+    "selected_model_json":  {
+                                "path":  "models\\ml\\unet\\weights\\selected_model.json",
+                                "bytes":  1654,
+                                "mtime_ns":  1780953844976725100,
+                                "sha256":  "7dd70961bf2b30a01ba5326b85ce46d2a16c63f32e6070118f60fb87a7b0f0a0"
+                            },
+    "market_indices":  {
+                           "path":  "final_runs\\tau04_hk_28623539\\inputs\\all_market_indices_with_hong_kong.csv",
+                           "bytes":  5949770,
+                           "mtime_ns":  1781091691372174900,
+                           "sha256":  "994aad40234c92bc2a328f3ed989d847929e6bf2684cf2b57777b8cd02fe7747"
+                       },
+    "fx_rates":  {
+                     "path":  "final_runs\\tau04_hk_28623539\\return_forecasting\\usd19_no_sri_lanka_28623539\\inputs\\country_fx_rates_usd_with_hong_kong.csv",
+                     "bytes":  2491738,
+                     "mtime_ns":  1781092161115884700,
+                     "sha256":  "eb63866991f254ad04d312bb1f14f2da35528dd30d2765270e6f50791cf77bf8"
+                 },
+    "treasury_1mo_monthly_rf":  {
+                     "path":  "final_runs\\tau04_hk_28623539\\return_forecasting\\usd19_no_sri_lanka_28623539\\inputs\\treasury_1mo_monthly_rf_used.csv",
+                     "bytes":  3598,
+                     "sha256":  "36575e9bb56aa9b67da420122c065ca46fa3bd9c6f5116f83c4a600a21f15263"
+                 }
+}

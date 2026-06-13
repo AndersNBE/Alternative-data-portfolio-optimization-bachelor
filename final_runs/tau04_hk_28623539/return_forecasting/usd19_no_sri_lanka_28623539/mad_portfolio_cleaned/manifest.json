@@ -1,0 +1,43 @@
+{
+  "signal_variants": [
+    "raw",
+    "direction",
+    "direction_risk_scaled"
+  ],
+  "lookbacks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "max_weight": 0.35,
+  "optimizer": "linear_program_minimize_mean_absolute_deviation_with_equal_weight_signal_floor",
+  "return_metric_note": "Forecast targets are cumulative h-month log returns. MAD reports period returns and horizon-normalized monthly return/volatility/Sharpe.",
+  "treasury_adjustment": {
+    "risk_free_source": "final_runs/tau04_hk_28623539/return_forecasting/usd19_no_sri_lanka_28623539/inputs/treasury_1mo_monthly_rf_used.csv",
+    "risk_free_sha256": "36575e9bb56aa9b67da420122c065ca46fa3bd9c6f5116f83c4a600a21f15263",
+    "output_metrics": "portfolio_metrics_treasury_adjusted.csv",
+    "summary": "treasury_adjusted_summary.md",
+    "plot": "plots/top_mad_treasury_adjusted_sharpe.svg",
+    "missing_risk_free_rows": 0,
+    "formula_note": "For each h-month realized log return, subtract the sum of monthly Treasury 1M log returns over the same h-month horizon; divide excess returns by h and annualize Sharpe as sqrt(12)*mean/monthly_vol.",
+    "best_treasury_adjusted_configuration": {
+      "model_id": "distributed_lag",
+      "forecast_horizon_months": 1,
+      "signal_variant": "raw",
+      "lookback_months": 5,
+      "annualized_sharpe_treasury_excess": 0.915242569039211,
+      "equal_weight_annualized_sharpe_treasury_excess": 0.5485295839657542
+    }
+  }
+}

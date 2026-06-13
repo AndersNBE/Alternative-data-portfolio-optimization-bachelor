@@ -1,0 +1,7 @@
+{
+  "model_id": "03_bce_dice_group_100ep_20260521_204006",
+  "threshold": 0.4,
+  "source_commit": "bd5d48e991e362f5114797622be8ca4b622ea0f2",
+  "source_run": "final_runs/tau04_hk_28623539",
+  "checkpoint_sha256": "876d7bb8a492c23fa448d187ebb11ab756a0a80864e140b5740795b7f30a64fc"
+}

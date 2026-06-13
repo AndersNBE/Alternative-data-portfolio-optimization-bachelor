@@ -1,0 +1,53 @@
+{
+  "suite_id": "usd19_no_sri_lanka_28623539",
+  "country_gnc": "final_runs\\tau04_hk_28623539\\daily_container_index\\country_gnc.csv",
+  "port_timeseries": "final_runs\\tau04_hk_28623539\\daily_container_index\\port_timeseries.csv",
+  "selected_model_json": "models\\ml\\unet\\weights\\selected_model.json",
+  "cleaned_model_id": "03_bce_dice_group_100ep_20260521_204006",
+  "cleaned_model_threshold": 0.4,
+  "market_indices": "final_runs\\tau04_hk_28623539\\inputs\\all_market_indices_with_hong_kong.csv",
+  "fx_rates": "data\\outputs\\market_indices\\yahoo_finance\\country_fx_rates_usd_with_hong_kong.csv",
+  "return_currency": "USD",
+  "target_definition": "cumulative_forward_log_return_month_t_to_t_plus_h_minus_1",
+  "feature_timing": "all predictors are lagged at least one month relative to the first forecast month",
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "models": [
+    "historical_mean",
+    "always_positive",
+    "ols_predictive",
+    "elastic_net_panel",
+    "distributed_lag",
+    "random_forest_panel"
+  ],
+  "excluded_countries": [
+    "Sri Lanka"
+  ],
+  "test_start": "2020-01-01",
+  "min_train_months": 36,
+  "min_non_null_features": 3,
+  "seed": 42,
+  "mad_lookbacks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "mad_max_weight": 0.35,
+  "forecast_horizon_months": 3
+}

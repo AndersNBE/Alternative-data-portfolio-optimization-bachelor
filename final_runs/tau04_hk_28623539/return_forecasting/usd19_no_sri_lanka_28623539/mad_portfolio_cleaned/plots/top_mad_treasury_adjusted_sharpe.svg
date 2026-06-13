@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="652" viewBox="0 0 1100 652">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Top USD no-Sri-Lanka MAD configurations</text>
+<text x="24" y="56" font-family="Arial, sans-serif" font-size="13" fill="#4b5563">Bars: Treasury-adjusted Sharpe. Red diamonds: matched equal-weight Treasury Sharpe.</text>
+<line x1="410.0" y1="66" x2="410.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="410.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">0.00</text>
+<line x1="522.0" y1="66" x2="522.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="522.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">0.20</text>
+<line x1="634.0" y1="66" x2="634.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="634.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">0.40</text>
+<line x1="746.0" y1="66" x2="746.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">0.60</text>
+<line x1="858.0" y1="66" x2="858.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="858.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">0.80</text>
+<line x1="970.0" y1="66" x2="970.0" y2="604" stroke="#e5e7eb" stroke-width="1"/>
+<text x="970.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">1.00</text>
+<text x="24" y="92" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=1, raw, L=5</text>
+<rect x="410" y="77" width="512.5" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="717.2,82 723.2,88 717.2,94 711.2,88" fill="#dc2626"/>
+<text x="930.5" y="92" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.915</text>
+<text x="24" y="126" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=1, raw, L=6</text>
+<rect x="410" y="111" width="471.2" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="688.0,116 694.0,122 688.0,128 682.0,122" fill="#dc2626"/>
+<text x="889.2" y="126" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.841</text>
+<text x="24" y="160" font-family="Arial, sans-serif" font-size="12" fill="#111827">elastic_net_panel, h=5, direction_risk_scaled, L=7</text>
+<rect x="410" y="145" width="469.1" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,150 696.0,156 690.0,162 684.0,156" fill="#dc2626"/>
+<text x="887.1" y="160" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.838</text>
+<text x="24" y="194" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=5, direction_risk_scaled, L=7</text>
+<rect x="410" y="179" width="465.3" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,184 696.0,190 690.0,196 684.0,190" fill="#dc2626"/>
+<text x="883.3" y="194" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.831</text>
+<text x="24" y="228" font-family="Arial, sans-serif" font-size="12" fill="#111827">historical_mean, h=5, direction_risk_scaled, L=7</text>
+<rect x="410" y="213" width="464.8" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,218 696.0,224 690.0,230 684.0,224" fill="#dc2626"/>
+<text x="882.8" y="228" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.830</text>
+<text x="24" y="262" font-family="Arial, sans-serif" font-size="12" fill="#111827">ols_predictive, h=5, direction_risk_scaled, L=7</text>
+<rect x="410" y="247" width="464.8" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,252 696.0,258 690.0,264 684.0,258" fill="#dc2626"/>
+<text x="882.8" y="262" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.830</text>
+<text x="24" y="296" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=1, direction, L=5</text>
+<rect x="410" y="281" width="458.9" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="717.2,286 723.2,292 717.2,298 711.2,292" fill="#dc2626"/>
+<text x="876.9" y="296" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.819</text>
+<text x="24" y="330" font-family="Arial, sans-serif" font-size="12" fill="#111827">random_forest_panel, h=5, direction_risk_scaled, L=7</text>
+<rect x="410" y="315" width="455.2" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,320 696.0,326 690.0,332 684.0,326" fill="#dc2626"/>
+<text x="873.2" y="330" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.813</text>
+<text x="24" y="364" font-family="Arial, sans-serif" font-size="12" fill="#111827">ols_predictive, h=5, raw, L=7</text>
+<rect x="410" y="349" width="455.1" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,354 696.0,360 690.0,366 684.0,360" fill="#dc2626"/>
+<text x="873.1" y="364" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.813</text>
+<text x="24" y="398" font-family="Arial, sans-serif" font-size="12" fill="#111827">elastic_net_panel, h=5, direction, L=7</text>
+<rect x="410" y="383" width="453.1" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,388 696.0,394 690.0,400 684.0,394" fill="#dc2626"/>
+<text x="871.1" y="398" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.809</text>
+<text x="24" y="432" font-family="Arial, sans-serif" font-size="12" fill="#111827">ols_predictive, h=5, direction, L=7</text>
+<rect x="410" y="417" width="452.7" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,422 696.0,428 690.0,434 684.0,428" fill="#dc2626"/>
+<text x="870.7" y="432" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.808</text>
+<text x="24" y="466" font-family="Arial, sans-serif" font-size="12" fill="#111827">historical_mean, h=5, direction, L=7</text>
+<rect x="410" y="451" width="452.2" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,456 696.0,462 690.0,468 684.0,462" fill="#dc2626"/>
+<text x="870.2" y="466" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.807</text>
+<text x="24" y="500" font-family="Arial, sans-serif" font-size="12" fill="#111827">random_forest_panel, h=5, raw, L=7</text>
+<rect x="410" y="485" width="451.2" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="690.0,490 696.0,496 690.0,502 684.0,496" fill="#dc2626"/>
+<text x="869.2" y="500" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.806</text>
+<text x="24" y="534" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=5, direction_risk_scaled, L=8</text>
+<rect x="410" y="519" width="450.6" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="670.0,524 676.0,530 670.0,536 664.0,530" fill="#dc2626"/>
+<text x="868.6" y="534" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.805</text>
+<text x="24" y="568" font-family="Arial, sans-serif" font-size="12" fill="#111827">distributed_lag, h=1, raw, L=10</text>
+<rect x="410" y="553" width="450.5" height="20" rx="2" fill="#2563eb" opacity="0.9"/>
+<polygon points="691.0,558 697.0,564 691.0,570 685.0,564" fill="#dc2626"/>
+<text x="868.5" y="568" font-family="Arial, sans-serif" font-size="12" fill="#111827">0.805</text>
+</svg>

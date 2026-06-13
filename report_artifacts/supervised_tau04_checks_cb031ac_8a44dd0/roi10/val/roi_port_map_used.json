@@ -1,0 +1,252 @@
+{
+  "Abu Dhabi": {
+    "polygon_port_name": "Abu Dhabi",
+    "port_slug": "abu_dhabi",
+    "port_id": "abu"
+  },
+  "Algeciras": {
+    "polygon_port_name": "Algeciras",
+    "port_slug": "algeciras",
+    "port_id": "algeciras"
+  },
+  "Antwerp-Brugges": {
+    "polygon_port_name": "Antwerp-Brugges",
+    "port_slug": "antwerpbrugges",
+    "port_id": "antwerpbrugges"
+  },
+  "Balboa": {
+    "polygon_port_name": "Balboa",
+    "port_slug": "balboa",
+    "port_id": "balboa"
+  },
+  "Bremen": {
+    "polygon_port_name": "Bremen",
+    "port_slug": "bremen",
+    "port_id": "bremen"
+  },
+  "Busan": {
+    "polygon_port_name": "Busan",
+    "port_slug": "busan",
+    "port_id": "busan"
+  },
+  "Cai Mep": {
+    "polygon_port_name": "Cai Mep",
+    "port_slug": "cai_mep",
+    "port_id": "cai"
+  },
+  "Colombo": {
+    "polygon_port_name": "Colombo",
+    "port_slug": "colombo",
+    "port_id": "colombo"
+  },
+  "Colon": {
+    "polygon_port_name": "Colon",
+    "port_slug": "colon",
+    "port_id": "colon"
+  },
+  "Da Lian": {
+    "polygon_port_name": "Da Lian",
+    "port_slug": "da_lian",
+    "port_id": "da"
+  },
+  "Dongguan": {
+    "polygon_port_name": "Dongguan",
+    "port_slug": "dongguan",
+    "port_id": "dongguan"
+  },
+  "Guangxi Beibu": {
+    "polygon_port_name": "Guangxi Beibu",
+    "port_slug": "guangxi_beibu",
+    "port_id": "guangxi"
+  },
+  "Guangzhou": {
+    "polygon_port_name": "Guangzhou",
+    "port_slug": "guangzhou",
+    "port_id": "guangzhou"
+  },
+  "Hai Phong": {
+    "polygon_port_name": "Hai Phong",
+    "port_slug": "hai_phong",
+    "port_id": "hai"
+  },
+  "Hamborg": {
+    "polygon_port_name": "Hamborg",
+    "port_slug": "hamborg",
+    "port_id": "hamborg"
+  },
+  "Ho Chi Minh City": {
+    "polygon_port_name": "Ho Chi Minh City",
+    "port_slug": "ho_chi_minh_city",
+    "port_id": "ho"
+  },
+  "Hong Kong": {
+    "polygon_port_name": "Hong Kong",
+    "port_slug": "hong_kong",
+    "port_id": "hong"
+  },
+  "Houston": {
+    "polygon_port_name": "Houston",
+    "port_slug": "houston",
+    "port_id": "houston"
+  },
+  "Jawaharal Nehru": {
+    "polygon_port_name": "Jawaharal Nehru",
+    "port_slug": "jawaharal_nehru",
+    "port_id": "jawaharal"
+  },
+  "Jebel Ali": {
+    "polygon_port_name": "Jebel Ali",
+    "port_slug": "jebel_ali",
+    "port_id": "jebel"
+  },
+  "Kaohsiung": {
+    "polygon_port_name": "Kaohsiung",
+    "port_slug": "kaohsiung",
+    "port_id": "kaohsiung"
+  },
+  "Laem Chabang": {
+    "polygon_port_name": "Laem Chabang",
+    "port_slug": "laem_chabang",
+    "port_id": "laem"
+  },
+  "Lianyungang": {
+    "polygon_port_name": "Lianyungang",
+    "port_slug": "lianyungang",
+    "port_id": "lianyungang"
+  },
+  "Long Beach": {
+    "polygon_port_name": "Long Beach",
+    "port_slug": "long_beach",
+    "port_id": "long"
+  },
+  "Los Angeles": {
+    "polygon_port_name": "Los Angeles",
+    "port_slug": "los_angeles",
+    "port_id": "los"
+  },
+  "Manila": {
+    "polygon_port_name": "Manila",
+    "port_slug": "manila",
+    "port_id": "manila"
+  },
+  "Mundra": {
+    "polygon_port_name": "Mundra",
+    "port_slug": "mundra",
+    "port_id": "mundra"
+  },
+  "New York New Jersey": {
+    "polygon_port_name": "New York New Jersey",
+    "port_slug": "new_york_new_jersey",
+    "port_id": "new"
+  },
+  "Ningbo-Zhoushan": {
+    "polygon_port_name": "Ningbo-Zhoushan",
+    "port_slug": "ningbozhoushan",
+    "port_id": "ningbozhoushan"
+  },
+  "Piraeus": {
+    "polygon_port_name": "Piraeus",
+    "port_slug": "piraeus",
+    "port_id": "piraeus"
+  },
+  "Port Klang": {
+    "polygon_port_name": "Port Klang",
+    "port_slug": "port_klang",
+    "port_id": "port"
+  },
+  "Qing Dao": {
+    "polygon_port_name": "Qing Dao",
+    "port_slug": "qing_dao",
+    "port_id": "qing"
+  },
+  "Rizhao": {
+    "polygon_port_name": "Rizhao",
+    "port_slug": "rizhao",
+    "port_id": "rizhao"
+  },
+  "Rotterdam": {
+    "polygon_port_name": "Rotterdam",
+    "port_slug": "rotterdam",
+    "port_id": "rotterdam"
+  },
+  "Santos": {
+    "polygon_port_name": "Santos",
+    "port_slug": "santos",
+    "port_id": "santos"
+  },
+  "Savannah": {
+    "polygon_port_name": "Savannah",
+    "port_slug": "savannah",
+    "port_id": "savannah"
+  },
+  "Shanghai": {
+    "polygon_port_name": "Shanghai",
+    "port_slug": "shanghai",
+    "port_id": "shanghai"
+  },
+  "Shenzhen": {
+    "polygon_port_name": "Shenzhen",
+    "port_slug": "shenzhen",
+    "port_id": "shenzhen"
+  },
+  "Singapore": {
+    "polygon_port_name": "Singapore",
+    "port_slug": "singapore",
+    "port_id": "singapore"
+  },
+  "Suzhou": {
+    "polygon_port_name": "Suzhou",
+    "port_slug": "suzhou",
+    "port_id": "suzhou"
+  },
+  "Tanger Med": {
+    "polygon_port_name": "Tanger Med",
+    "port_slug": "tanger_med",
+    "port_id": "tanger"
+  },
+  "Tanjung Pelepas": {
+    "polygon_port_name": "Tanjung Pelepas",
+    "port_slug": "tanjung_pelepas",
+    "port_id": "tanjung"
+  },
+  "Tanjung Perak": {
+    "polygon_port_name": "Tanjung Perak",
+    "port_slug": "tanjung_perak",
+    "port_id": "tanjung"
+  },
+  "Tanjung Priok": {
+    "polygon_port_name": "Tanjung Priok",
+    "port_slug": "tanjung_priok",
+    "port_id": "tanjung"
+  },
+  "Tianjin": {
+    "polygon_port_name": "Tianjin",
+    "port_slug": "tianjin",
+    "port_id": "tianjin"
+  },
+  "Tokyo": {
+    "polygon_port_name": "Tokyo",
+    "port_slug": "tokyo",
+    "port_id": "tokyo"
+  },
+  "Valencia": {
+    "polygon_port_name": "Valencia",
+    "port_slug": "valencia",
+    "port_id": "valencia"
+  },
+  "Xiamen": {
+    "polygon_port_name": "Xiamen",
+    "port_slug": "xiamen",
+    "port_id": "xiamen"
+  },
+  "Yantai": {
+    "polygon_port_name": "Yantai",
+    "port_slug": "yantai",
+    "port_id": "yantai"
+  },
+  "Yingkou": {
+    "polygon_port_name": "Yingkou",
+    "port_slug": "yingkou",
+    "port_id": "yingkou"
+  }
+}

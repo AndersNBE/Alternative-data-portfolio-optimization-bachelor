@@ -1,0 +1,636 @@
+PORT: Shanghai
+count: 8 dx_m: 2560 dy_m: 1600
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [121.34233238528329, 31.470486455976562, 121.39617829395765, 31.516531722199602]
+  P2: [121.55771601998076, 31.332350657307448, 121.61156192865512, 31.378395923530483]
+  P3: [121.61156192865512, 31.286305391084408, 121.6654078373295, 31.332350657307448]
+  P4: [121.61156192865512, 31.332350657307448, 121.6654078373295, 31.378395923530483]
+  P5: [121.6654078373295, 31.286305391084408, 121.71925374600386, 31.332350657307448]
+  P6: [121.98848328937571, 30.641671663961862, 122.04232919805007, 30.687716930184898]
+  P7: [122.04232919805007, 30.595626397738823, 122.09617510672444, 30.641671663961862]
+  P8: [122.04232919805007, 30.641671663961862, 122.09617510672444, 30.687716930184898]
+
+PORT: Singapore
+count: 5 dx_m: 600 dy_m: 1400
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [103.59869159217598, 1.2334117162598233, 103.64474811636406, 1.2794569824828623]
+  P2: [103.73686116474022, 1.2334117162598233, 103.7829176889283, 1.2794569824828623]
+  P3: [103.73686116474022, 1.2794569824828623, 103.7829176889283, 1.3255022487059012]
+  P4: [103.7829176889283, 1.2334117162598233, 103.82897421311637, 1.2794569824828623]
+  P5: [103.82897421311637, 1.2334117162598233, 103.87503073730446, 1.2794569824828623]
+
+PORT: Ningbo-Zhoushan
+count: 8 dx_m: 1880 dy_m: 160
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [121.77883463013418, 29.899755588726777, 121.83194878522075, 29.945800854949816]
+  P2: [121.83194878522075, 29.899755588726777, 121.88506294030732, 29.945800854949816]
+  P3: [121.88506294030732, 29.853710322503737, 121.9381770953939, 29.899755588726777]
+  P4: [121.88506294030732, 29.899755588726777, 121.9381770953939, 29.945800854949816]
+  P5: [121.99129125048046, 29.76161979005766, 122.04440540556703, 29.807665056280698]
+  P6: [121.99129125048046, 29.807665056280698, 122.04440540556703, 29.853710322503737]
+  P7: [121.99129125048046, 29.853710322503737, 122.04440540556703, 29.899755588726777]
+  P8: [122.04440540556703, 29.853710322503737, 122.09751956065361, 29.899755588726777]
+
+PORT: Shenzhen
+count: 6 dx_m: 3640 dy_m: 2520
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [113.80316440048713, 22.541967315183435, 113.85301039679996, 22.588012581406474]
+  P2: [113.85301039679996, 22.40383151651432, 113.90285639311278, 22.44987678273736]
+  P3: [113.85301039679996, 22.44987678273736, 113.90285639311278, 22.4959220489604]
+  P4: [113.85301039679996, 22.4959220489604, 113.90285639311278, 22.541967315183435]
+  P5: [114.20193237098972, 22.541967315183435, 114.25177836730255, 22.588012581406474]
+  P6: [114.25177836730255, 22.541967315183435, 114.30162436361537, 22.588012581406474]
+
+PORT: Qing Dao
+count: 7 dx_m: 960 dy_m: 2760
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [120.07673457931502, 36.009103233980916, 120.13367156242067, 36.055148500203956]
+  P2: [120.07673457931502, 36.055148500203956, 120.13367156242067, 36.101193766426995]
+  P3: [120.13367156242067, 35.96305796775788, 120.19060854552635, 36.009103233980916]
+  P4: [120.13367156242067, 36.009103233980916, 120.19060854552635, 36.055148500203956]
+  P5: [120.13367156242067, 36.055148500203956, 120.19060854552635, 36.101193766426995]
+  P6: [120.19060854552635, 35.96305796775788, 120.24754552863202, 36.009103233980916]
+  P7: [120.19060854552635, 36.009103233980916, 120.24754552863202, 36.055148500203956]
+
+PORT: Guangzhou
+count: 5 dx_m: 3280 dy_m: 200
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [113.16026092770763, 23.25874568207633, 113.21022458452659, 23.30479094829937]
+  P2: [113.4100792118024, 23.074564617184176, 113.46004286862134, 23.120609883407216]
+  P3: [113.5100065254403, 23.028519350961137, 113.55997018225925, 23.074564617184176]
+  P4: [113.65989749589716, 22.56806668873075, 113.7098611527161, 22.614111954953785]
+  P5: [113.65989749589716, 22.614111954953785, 113.7098611527161, 22.660157221176824]
+
+PORT: Busan
+count: 3 dx_m: 4400 dy_m: 4080
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [128.76827303697237, 35.038381309075405, 128.82454849903093, 35.084426575298444]
+  P2: [128.82454849903093, 35.038381309075405, 128.8808239610895, 35.084426575298444]
+  P3: [129.04965034726516, 35.084426575298444, 129.1059258093237, 35.130471841521484]
+
+PORT: Tianjin
+count: 4 dx_m: 760 dy_m: 40
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [117.71171380499646, 38.96756138241933, 117.77097408830336, 39.01360664864237]
+  P2: [117.71171380499646, 39.01360664864237, 117.77097408830336, 39.05965191486541]
+  P3: [117.71171380499646, 39.05965191486541, 117.77097408830336, 39.10569718108845]
+  P4: [117.77097408830336, 38.96756138241933, 117.83023437161026, 39.01360664864237]
+
+PORT: Jebel Ali
+count: 2 dx_m: 2800 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [55.03304528445847, 24.96356142127696, 55.083854587722534, 25.0096066875]
+  P2: [55.03304528445847, 25.0096066875, 55.083854587722534, 25.05565195372304]
+
+PORT: Port Klang
+count: 3 dx_m: 1440 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [101.26182744121728, 2.8602132013308825, 101.30793582786569, 2.9062584675539216]
+  P2: [101.26182744121728, 2.9062584675539216, 101.30793582786569, 2.9523037337769606]
+  P3: [101.35404421451409, 2.9983489999999997, 101.4001526011625, 3.0443942662230388]
+
+PORT: Rotterdam
+count: 4 dx_m: 3760 dy_m: 2440
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [3.929385370717591, 51.91913488096138, 4.004080600193965, 51.96518014718442]
+  P2: [4.004080600193965, 51.91913488096138, 4.078775829670338, 51.96518014718442]
+  P3: [4.004080600193965, 51.96518014718442, 4.078775829670338, 52.01122541340746]
+  P4: [4.377556747575832, 51.87308961473834, 4.452251977052205, 51.91913488096138]
+
+PORT: Hong Kong
+count: 2 dx_m: 240 dy_m: 1480
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [113.8996999424104, 22.35231322899837, 113.94948123517857, 22.39835849522141]
+  P2: [114.09882511348312, 22.30626796277533, 114.1486064062513, 22.35231322899837]
+
+PORT: Antwerp-Brugges
+count: 6 dx_m: 0 dy_m: 40
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [3.1344999521508408, 51.313100747510276, 3.208164234440157, 51.359146013733316]
+  P2: [4.165799904201275, 51.26705548128724, 4.239464186490593, 51.313100747510276]
+  P3: [4.239464186490593, 51.26705548128724, 4.313128468779909, 51.313100747510276]
+  P4: [4.239464186490593, 51.313100747510276, 4.313128468779909, 51.359146013733316]
+  P5: [4.313128468779909, 51.26705548128724, 4.386792751069226, 51.313100747510276]
+  P6: [4.313128468779909, 51.313100747510276, 4.386792751069226, 51.359146013733316]
+
+PORT: Xiamen
+count: 4 dx_m: 0 dy_m: 200
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [117.94919133983562, 24.43066505345939, 117.9997825963884, 24.47671031968243]
+  P2: [117.9997825963884, 24.43066505345939, 118.05037385294118, 24.47671031968243]
+  P3: [118.05037385294118, 24.47671031968243, 118.10096510949396, 24.522755585905468]
+  P4: [118.20214762259951, 24.522755585905468, 118.25273887915229, 24.568800852128504]
+
+PORT: Tanjung Pelepas
+count: 2 dx_m: 1200 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [103.52147734413639, 1.309865233776961, 103.56753550689703, 1.3559105]
+  P2: [103.52147734413639, 1.3559105, 103.56753550689703, 1.401955766223039]
+
+PORT: Tanger Med
+count: 2 dx_m: 0 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-5.56823149833362, 35.83310998377696, -5.5114033749999995, 35.87915525]
+  P2: [-5.5114033749999995, 35.87915525, -5.4545752516663795, 35.925200516223036]
+
+PORT: Suzhou
+count: 3 dx_m: 0 dy_m: 920
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [120.37687974015785, 31.928718660891846, 120.43104711385679, 31.974763927114886]
+  P2: [120.43104711385679, 31.928718660891846, 120.48521448755572, 31.974763927114886]
+  P3: [121.18939034564193, 31.606401797330573, 121.24355771934087, 31.652447063553613]
+
+PORT: Long Beach
+count: 4 dx_m: 0 dy_m: 2480
+manual_patch_expansions: P3_west_of_P1, P4_south_of_P1
+scene_dt: 2026-04-29T18:38:31.024000Z eo_cloud_cover: 0.0
+preview_nodata_ratio: 0.000000
+stac_window_from: 2025-05-04T00:00:00Z
+stac_window_to: 2027-05-04T00:00:00Z
+preview_time_from: 2026-04-29T12:38:31.024000Z
+preview_time_to: 2026-04-30T00:38:31.024000Z
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-118.26593974827628, 33.728908755757594, -118.2105598653846, 33.77495402198063]
+  P2: [-118.2105598653846, 33.728908755757594, -118.15517998249291, 33.77495402198063]
+  P3: [-118.32131963116797, 33.728908755757594, -118.26593974827628, 33.77495402198063]
+  P4: [-118.26593974827628, 33.682863489534554, -118.2105598653846, 33.728908755757594]
+
+PORT: Laem Chabang
+count: 2 dx_m: 2040 dy_m: 1840
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [100.87523144359245, 13.042821563825866, 100.92250170186303, 13.088866830048905]
+  P2: [100.87523144359245, 13.088866830048905, 100.92250170186303, 13.134912096271945]
+
+PORT: Kaohsiung
+count: 3 dx_m: 240 dy_m: 320
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [120.26587958783283, 22.52321033710945, 120.31574258610868, 22.569255603332486]
+  P2: [120.26587958783283, 22.569255603332486, 120.31574258610868, 22.615300869555526]
+  P3: [120.31574258610868, 22.52321033710945, 120.36560558438455, 22.569255603332486]
+
+PORT: Ho Chi Minh City
+count: 7 dx_m: 0 dy_m: 2600
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [106.72749209470112, 10.603063500949602, 106.77434776960173, 10.64910876717264]
+  P2: [106.72749209470112, 10.741199299618719, 106.77434776960173, 10.787244565841757]
+  P3: [106.77434776960173, 10.741199299618719, 106.82120344450236, 10.787244565841757]
+  P4: [106.96177046920421, 10.464927702280484, 107.00862614410482, 10.510972968503523]
+  P5: [106.96177046920421, 10.603063500949602, 107.00862614410482, 10.64910876717264]
+  P6: [107.00862614410482, 10.464927702280484, 107.05548181900545, 10.510972968503523]
+  P7: [107.00862614410482, 10.510972968503523, 107.05548181900545, 10.557018234726563]
+
+PORT: Guangxi Beibu
+count: 4 dx_m: 2920 dy_m: 1560
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [108.30856469750701, 21.556004923556568, 108.35808354063005, 21.602050189779607]
+  P2: [108.35808354063005, 21.602050189779607, 108.40760238375309, 21.648095456002647]
+  P3: [108.60567775624524, 21.648095456002647, 108.6551965993683, 21.694140722225686]
+  P4: [109.54653577558302, 21.463914391110492, 109.59605461870606, 21.509959657333532]
+
+PORT: New York New Jersey
+count: 4 dx_m: 1240 dy_m: 2760
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-74.24141381399825, 40.60417784143825, -74.18070485878276, 40.65022310766129]
+  P2: [-74.18070485878276, 40.65022310766129, -74.11999590356729, 40.69626837388433]
+  P3: [-74.11999590356729, 40.65022310766129, -74.0592869483518, 40.69626837388433]
+  P4: [-74.0592869483518, 40.65022310766129, -73.99857799313632, 40.69626837388433]
+
+PORT: Mundra
+count: 2 dx_m: 2240 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [69.66731320946104, 22.71646036711029, 69.71724753338216, 22.76250563333333]
+  P2: [69.66731320946104, 22.76250563333333, 69.71724753338216, 22.80855089955637]
+
+PORT: Hamborg
+count: 2 dx_m: 0 dy_m: 2200
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [9.85890472035089, 53.493615221747525, 9.936351089285763, 53.539660487970565]
+  P2: [9.936351089285763, 53.493615221747525, 10.013797458220635, 53.539660487970565]
+
+PORT: Tanjung Priok
+count: 2 dx_m: 880 dy_m: 1600
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [106.85553638552437, -6.1354488872719095, 106.90184417488089, -6.089403621048871]
+  P2: [106.90184417488089, -6.1354488872719095, 106.9481519642374, -6.089403621048871]
+
+PORT: Manila
+count: 2 dx_m: 1320 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [120.92456430792934, 14.567101212560797, 120.97214887258498, 14.613146478783836]
+  P2: [120.92456430792934, 14.613146478783836, 120.97214887258498, 14.659191745006876]
+
+PORT: Santos
+count: 4 dx_m: 1400 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-46.40988521258134, -23.937814032250852, -46.35950670839211, -23.891768766027813]
+  P2: [-46.35950670839211, -23.98385929847389, -46.30912820420288, -23.937814032250852]
+  P3: [-46.35950670839211, -23.937814032250852, -46.30912820420288, -23.891768766027813]
+  P4: [-46.30912820420288, -23.98385929847389, -46.25874970001365, -23.937814032250852]
+
+PORT: Valencia
+count: 1 dx_m: 1440 dy_m: 1920
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-0.3633014228318776, 39.41560290383309, -0.30367596182557544, 39.46164817005613]
+
+PORT: Piraeus
+count: 1 dx_m: 920 dy_m: 480
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [23.54576764525948, 37.91624122585283, 23.60416647271456, 37.96228649207587]
+
+PORT: Bremen
+count: 3 dx_m: 720 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [8.506425651360962, 53.56183818509797, 8.583446692951208, 53.607883451321]
+  P2: [8.660467734541454, 53.055340256644534, 8.737488776131702, 53.101385522867574]
+  P3: [8.660467734541454, 53.101385522867574, 8.737488776131702, 53.14743078909061]
+
+PORT: Tokyo
+count: 2 dx_m: 2560 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [139.75153079929748, 35.564675557133846, 139.80816761271126, 35.610720823356885]
+  P2: [139.75153079929748, 35.610720823356885, 139.80816761271126, 35.656766089579925]
+
+PORT: Algeciras
+count: 1 dx_m: 880 dy_m: 1520
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-5.47925725551627, 36.10313461224587, -5.422244048698054, 36.14917987846891]
+
+PORT: Savannah
+count: 1 dx_m: 2120 dy_m: 1040
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-81.1863881807152, 32.09593728757184, -81.13201380111481, 32.14198255379488]
+
+PORT: Houston
+count: 4 dx_m: 2720 dy_m: 1160
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-95.24951504892489, 29.6846955726661, -95.19651964665424, 29.73074083888914]
+  P2: [-95.14352424438358, 29.73074083888914, -95.09052884211293, 29.77678610511218]
+  P3: [-95.03753343984229, 29.592605040220022, -94.98453803757164, 29.63865030644306]
+  P4: [-95.03753343984229, 29.63865030644306, -94.98453803757164, 29.6846955726661]
+
+PORT: Abu Dhabi
+count: 1 dx_m: 1800 dy_m: 2080
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [54.61654732971761, 24.7785040699456, 54.667272796615755, 24.824549336168637]
+
+PORT: Da Lian
+count: 2 dx_m: 0 dy_m: 1880
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [121.79525525919846, 38.978957269705084, 121.85451122627565, 39.025002535928124]
+  P2: [121.85451122627565, 38.978957269705084, 121.91376719335284, 39.025002535928124]
+
+PORT: Dongguan
+count: 2 dx_m: 0 dy_m: 0
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [113.50316441280849, 22.98753116928431, 113.55316451659857, 23.03357643550735]
+  P2: [113.55316451659857, 22.84939537061519, 113.60316462038865, 22.89544063683823]
+
+PORT: Colombo
+count: 1 dx_m: 1400 dy_m: 1240
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [79.81195560674408, 6.913339377977748, 79.8583415379299, 6.959384644200788]
+
+PORT: Colon
+count: 1 dx_m: 2040 dy_m: 2000
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-79.91988737708046, 9.334418923445439, -79.87322045661153, 9.380464189668478]
+
+PORT: Balboa
+count: 1 dx_m: 1280 dy_m: 1040
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [-79.60199510662304, 8.921457091394291, -79.55538126063058, 8.96750235761733]
+
+PORT: Hai Phong
+count: 5 dx_m: 0 dy_m: 400
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [106.6805996342256, 20.836156441155996, 106.72986573426718, 20.882201707379036]
+  P2: [106.72986573426718, 20.79011117493296, 106.77913183430874, 20.836156441155996]
+  P3: [106.72986573426718, 20.836156441155996, 106.77913183430874, 20.882201707379036]
+  P4: [106.77913183430874, 20.79011117493296, 106.8283979343503, 20.836156441155996]
+  P5: [106.87766403439188, 20.79011117493296, 106.92693013443345, 20.836156441155996]
+
+PORT: Cai Mep
+count: 3 dx_m: 1280 dy_m: 3680
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [106.97715393893878, 10.474892677806427, 107.02398851051396, 10.520937944029466]
+  P2: [106.97715393893878, 10.613028476475543, 107.02398851051396, 10.659073742698583]
+  P3: [107.02398851051396, 10.520937944029466, 107.07082308208912, 10.566983210252504]
+
+PORT: Jawaharal Nehru
+count: 2 dx_m: 440 dy_m: 2840
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [72.91250966703069, 18.91834338017326, 72.96119023035207, 18.964388646396298]
+  P2: [72.96119023035207, 18.87229811395022, 73.00987079367346, 18.91834338017326]
+
+PORT: Rizhao
+count: 1 dx_m: 520 dy_m: 1680
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [119.47756490927117, 35.32431822438773, 119.53402199479223, 35.370363490610764]
+
+PORT: Yingkou
+count: 1 dx_m: 1160 dy_m: 1240
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [122.05499749089051, 40.234168988875496, 122.11534377227503, 40.28021425509853]
+
+PORT: Yantai
+count: 1 dx_m: 680 dy_m: 680
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [121.32704600304925, 37.53805060496325, 121.38514552062067, 37.58409587118629]
+
+PORT: Tanjung Perak
+count: 1 dx_m: 600 dy_m: 800
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [112.68233227000464, -7.248509997153903, 112.72874449178092, -7.202464730930863]
+
+PORT: Lianyungang
+count: 1 dx_m: 2040 dy_m: 640
+scene_dt: SKIPPED_PREVIEW eo_cloud_cover: nan
+preview_nodata_ratio: nan
+stac_window_from:
+stac_window_to:
+preview_time_from:
+preview_time_to:
+patch_bboxes [minLon, minLat, maxLon, maxLat]:
+  P1: [119.39493183375748, 34.70210332348754, 119.45096688227692, 34.74814858971058]

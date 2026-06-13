@@ -1,0 +1,21 @@
+{
+  "num_cases": 115,
+  "num_cases_port_mapped": 115,
+  "num_cases_with_roi": 115,
+  "num_cases_without_roi": 0,
+  "num_cases_empty_roi": 0,
+  "avg_roi_coverage_ratio": 0.1467877263608186,
+  "avg_dice_pre_roi": 0.6323291135870892,
+  "avg_dice_post_roi": 0.6352617382355358,
+  "delta_dice": 0.002932624648446569,
+  "avg_iou_pre_roi": 0.49668160790334576,
+  "avg_iou_post_roi": 0.5000528835084127,
+  "delta_iou": 0.003371275605066948,
+  "avg_precision_pre_roi": 0.6457885647921459,
+  "avg_precision_post_roi": 0.6516981973596241,
+  "delta_precision": 0.005909632567478229,
+  "avg_recall_pre_roi": 0.7297662287950516,
+  "avg_recall_post_roi": 0.7292730210915855,
+  "delta_recall": -0.0004932077034660587,
+  "missing_roi_ports": []
+}

@@ -1,0 +1,35 @@
+port_id,country,notes
+abu,UAE,Derived from abu_dhabi
+algeciras,Spanien,Direct match
+antwerpbrugges,Belgien,Derived from antwerp-brugges
+bremen,Tyskland,Direct match
+busan,Sydkorea,Direct match
+colombo,Sri Lanka,Direct match
+da,Kina,Derived from da_lian
+dongguan,Kina,Direct match
+guangxi,Kina,Derived from guangxi_beibu
+guangzhou,Kina,Direct match
+hai,Vietnam,Derived from hai_phong
+hamborg,Tyskland,Direct match
+ho,Vietnam,Derived from ho_chi_minh_city
+houston,USA,Direct match
+jebel,UAE,Derived from jebel_ali
+kaohsiung,Taiwan,Direct match
+lianyungang,Kina,Direct match
+long,USA,Derived from long_beach
+los,USA,Derived from los_angeles
+ningbozhoushan,Kina,Derived from ningbo-zhoushan
+piraeus,Grækenland,Direct match
+port,Malaysia,Derived from port_klang
+qing,Kina,Derived from qing_dao
+rotterdam,Holland,Direct match
+santos,Brasilien,Direct match
+savannah,USA,Direct match
+shanghai,Kina,Direct match
+shenzhen,Kina,Direct match
+tanger,Marokko,Derived from tanger_med
+tanjung,Indonesia,Covers both tanjung_priok and tanjung_perak in this run
+tianjin,Kina,Direct match
+valencia,Spanien,Direct match
+yantai,Kina,Direct match
+yingkou,Kina,Direct match

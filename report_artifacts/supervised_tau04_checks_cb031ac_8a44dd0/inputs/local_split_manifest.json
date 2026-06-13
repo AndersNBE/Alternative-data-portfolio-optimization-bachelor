@@ -1,0 +1,27 @@
+{
+  "artifact": "supervised_tau04_checks_cb031ac_8a44dd0",
+  "source_contract_commit": "8a44dd0",
+  "supervised_unet_source_commit": "cb031ac4deffdb3a91aabb4b5f61186ca9e3ab34",
+  "checkpoint_sha256": "876d7bb8a492c23fa448d187ebb11ab756a0a80864e140b5740795b7f30a64fc",
+  "local_dataset_root": "FINAL_SEGMENTATION_IMAGE_ROOT",
+  "splits": [
+    {
+      "split": "val",
+      "rows": 114,
+      "source_csv": "final_runs/full_gode_havnebilleder_tau06_final_2026_06_05/model/splits/val.csv",
+      "source_csv_sha256": "922fe5e61c0bd707de35fb03e9b3a634d036847ad005e6f70ae68d6aec232b97",
+      "local_csv": "report_artifacts/supervised_tau04_checks_cb031ac_8a44dd0/inputs/val_local.csv",
+      "local_csv_sha256": "3a416907b7da13c2fabf4940383998e3a1b2e3c604ae8e635d4acef240cfecd4",
+      "missing_files": 0
+    },
+    {
+      "split": "test",
+      "rows": 115,
+      "source_csv": "final_runs/full_gode_havnebilleder_tau06_final_2026_06_05/model/splits/test.csv",
+      "source_csv_sha256": "ad619efe4740d30caee1bd8369b6f890612ebe30549949450d7d0b7cbf737a32",
+      "local_csv": "report_artifacts/supervised_tau04_checks_cb031ac_8a44dd0/inputs/test_local.csv",
+      "local_csv_sha256": "68b69e21e11cbdbe339b53ab61e97e50db3a58d60912d496a529966e5efc00cc",
+      "missing_files": 0
+    }
+  ]
+}

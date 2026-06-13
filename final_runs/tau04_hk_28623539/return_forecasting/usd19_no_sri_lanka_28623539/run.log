@@ -1,0 +1,129 @@
+Suite: usd19_no_sri_lanka_28623539
+Output: final_runs\tau04_hk_28623539\return_forecasting\usd19_no_sri_lanka_28623539
+Cleaned GNC: final_runs\tau04_hk_28623539\daily_container_index\country_gnc.csv
+Market indices: final_runs\tau04_hk_28623539\inputs\all_market_indices_with_hong_kong.csv
+Return currency: USD
+Models: historical_mean, always_positive, ols_predictive, elastic_net_panel, distributed_lag, random_forest_panel
+Horizons: [1, 2, 3, 4, 5]
+Excluded countries: Sri Lanka
+Selected segmentation model: 03_bce_dice_group_100ep_20260521_204006 | threshold=0.4
+Loaded GNC rows: 13,265
+Loaded monthly market return rows: 2,109
+
+================================================================================
+Forecast horizon h=1
+Panel: 11,651 rows | 19 countries | eval rows=8,259
+Running model: historical_mean
+  produced 11,651 predictions
+Running model: always_positive
+  produced 11,651 predictions
+Running model: ols_predictive
+  produced 11,651 predictions
+Running model: elastic_net_panel
+  produced 11,651 predictions
+Running model: distributed_lag
+  produced 11,651 predictions
+Running model: random_forest_panel
+  produced 11,651 predictions
+ forecast_horizon_months            model_id  n_predictions  n_countries   date_min   date_max     rmse      mae      bias      corr  directional_accuracy  active_directional_accuracy  predicted_positive_rate  actual_positive_rate  mean_actual_return  mean_predicted_return  strategy_mean_monthly_return  strategy_monthly_vol  strategy_annualized_sharpe  rmse_improvement_vs_historical_mean
+                       1     distributed_lag           8259           19 2020-01-01 2026-04-01 0.051791 0.037780 -0.003806  0.717063              0.828672                     0.828672                 0.653106              0.591476            0.007542               0.003737                      0.033614              0.049734                    2.341333                             0.139663
+                       1 random_forest_panel           8259           19 2020-01-01 2026-04-01 0.053190 0.037274 -0.003372  0.605782              0.840295                     0.840295                 0.635186              0.591476            0.007542               0.004170                      0.031565              0.051059                    2.141497                             0.116424
+                       1   elastic_net_panel           8259           19 2020-01-01 2026-04-01 0.057628 0.042049 -0.004280  0.351111              0.711830                     0.711830                 0.664608              0.591476            0.007542               0.003263                      0.018752              0.057024                    1.139125                             0.042696
+                       1      ols_predictive           8259           19 2020-01-01 2026-04-01 0.060198 0.044650 -0.004860 -0.033777              0.559148                     0.559148                 0.665698              0.591476            0.007542               0.002683                      0.001993              0.059995                    0.115054                             0.000008
+                       1     historical_mean           8259           19 2020-01-01 2026-04-01 0.060198 0.044652 -0.004853 -0.034340              0.560601                     0.560601                 0.666182              0.591476            0.007542               0.002689                      0.002038              0.059993                    0.117654                             0.000000
+                       1     always_positive           8259           19 2020-01-01 2026-04-01 0.994243 0.992458  0.992458       NaN              0.591476                     0.591476                 1.000000              0.591476            0.007542               1.000000                      0.007542              0.059552                    0.438728                           -15.516123
+
+================================================================================
+Forecast horizon h=2
+Panel: 11,625 rows | 19 countries | eval rows=8,233
+Running model: historical_mean
+  produced 11,625 predictions
+Running model: always_positive
+  produced 11,625 predictions
+Running model: ols_predictive
+  produced 11,625 predictions
+Running model: elastic_net_panel
+  produced 11,625 predictions
+Running model: distributed_lag
+  produced 11,625 predictions
+Running model: random_forest_panel
+  produced 11,625 predictions
+ forecast_horizon_months            model_id  n_predictions  n_countries   date_min   date_max     rmse      mae      bias     corr  directional_accuracy  active_directional_accuracy  predicted_positive_rate  actual_positive_rate  mean_actual_return  mean_predicted_return  strategy_mean_monthly_return  strategy_monthly_vol  strategy_annualized_sharpe  rmse_improvement_vs_historical_mean
+                       2     distributed_lag           8233           19 2020-01-01 2026-03-01 0.079457 0.059310 -0.009142 0.418936              0.685412                     0.685412                 0.681040               0.61132            0.015469               0.006327                      0.031029              0.079530                    1.351545                             0.065064
+                       2 random_forest_panel           8233           19 2020-01-01 2026-03-01 0.079678 0.059180 -0.007767 0.369876              0.676910                     0.676910                 0.714320               0.61132            0.015469               0.007702                      0.030493              0.079737                    1.324721                             0.062456
+                       2   elastic_net_panel           8233           19 2020-01-01 2026-03-01 0.083236 0.062185 -0.009483 0.179054              0.624195                     0.624195                 0.686384               0.61132            0.015469               0.005986                      0.019256              0.083169                    0.802032                             0.020597
+                       2     historical_mean           8233           19 2020-01-01 2026-03-01 0.084986 0.063859 -0.010033 0.022118              0.562128                     0.562128                 0.679461               0.61132            0.015469               0.005436                      0.007994              0.084994                    0.325829                             0.000000
+                       2      ols_predictive           8233           19 2020-01-01 2026-03-01 0.084989 0.063856 -0.010013 0.021785              0.562371                     0.562371                 0.678732               0.61132            0.015469               0.005456                      0.008025              0.084991                    0.327092                            -0.000037
+                       2     always_positive           8233           19 2020-01-01 2026-03-01 0.988104 0.984531  0.984531      NaN              0.611320                     0.611320                 1.000000               0.61132            0.015469               1.000000                      0.015469              0.083956                    0.638260                           -10.626628
+
+================================================================================
+Forecast horizon h=3
+Panel: 11,574 rows | 19 countries | eval rows=8,182
+Running model: historical_mean
+  produced 11,574 predictions
+Running model: always_positive
+  produced 11,574 predictions
+Running model: ols_predictive
+  produced 11,574 predictions
+Running model: elastic_net_panel
+  produced 11,574 predictions
+Running model: distributed_lag
+  produced 11,574 predictions
+Running model: random_forest_panel
+  produced 11,574 predictions
+ forecast_horizon_months            model_id  n_predictions  n_countries   date_min   date_max     rmse      mae      bias     corr  directional_accuracy  active_directional_accuracy  predicted_positive_rate  actual_positive_rate  mean_actual_return  mean_predicted_return  strategy_mean_monthly_return  strategy_monthly_vol  strategy_annualized_sharpe  rmse_improvement_vs_historical_mean
+                       3 random_forest_panel           8182           19 2020-01-01 2026-02-01 0.097132 0.073385 -0.013730 0.298572              0.632975                     0.632975                 0.728306               0.61012            0.023797               0.010067                      0.032119              0.098030                    1.135005                             0.047404
+                       3     distributed_lag           8182           19 2020-01-01 2026-02-01 0.097900 0.074362 -0.015967 0.294151              0.633830                     0.633830                 0.679052               0.61012            0.023797               0.007830                      0.030446              0.098563                    1.070054                             0.039865
+                       3   elastic_net_panel           8182           19 2020-01-01 2026-02-01 0.100656 0.076491 -0.016169 0.143209              0.601076                     0.601076                 0.674896               0.61012            0.023797               0.007627                      0.021738              0.100842                    0.746728                             0.012840
+                       3     historical_mean           8182           19 2020-01-01 2026-02-01 0.101965 0.077674 -0.016699 0.065231              0.560865                     0.560865                 0.660108               0.61012            0.023797               0.007098                      0.011930              0.102466                    0.403320                             0.000000
+                       3      ols_predictive           8182           19 2020-01-01 2026-02-01 0.101981 0.077688 -0.016726 0.064797              0.560254                     0.560254                 0.658763               0.61012            0.023797               0.007071                      0.012078              0.102449                    0.408401                            -0.000159
+                       3     always_positive           8182           19 2020-01-01 2026-02-01 0.981350 0.976203  0.976203      NaN              0.610120                     0.610120                 1.000000               0.61012            0.023797               1.000000                      0.023797              0.100376                    0.821257                            -8.624351
+
+================================================================================
+Forecast horizon h=4
+Panel: 11,488 rows | 19 countries | eval rows=8,096
+Running model: historical_mean
+  produced 11,488 predictions
+Running model: always_positive
+  produced 11,488 predictions
+Running model: ols_predictive
+  produced 11,488 predictions
+Running model: elastic_net_panel
+  produced 11,488 predictions
+Running model: distributed_lag
+  produced 11,488 predictions
+Running model: random_forest_panel
+  produced 11,488 predictions
+ forecast_horizon_months            model_id  n_predictions  n_countries   date_min   date_max     rmse      mae      bias     corr  directional_accuracy  active_directional_accuracy  predicted_positive_rate  actual_positive_rate  mean_actual_return  mean_predicted_return  strategy_mean_monthly_return  strategy_monthly_vol  strategy_annualized_sharpe  rmse_improvement_vs_historical_mean
+                       4 random_forest_panel           8096           19 2020-01-01 2026-01-01 0.106090 0.081946 -0.021889 0.321665              0.675025                     0.675025                 0.743454              0.653903            0.035298               0.013409                      0.040014              0.107504                    1.289360                             0.055633
+                       4     distributed_lag           8096           19 2020-01-01 2026-01-01 0.108839 0.084638 -0.025600 0.251470              0.637969                     0.637969                 0.665143              0.653903            0.035298               0.009697                      0.032353              0.110052                    1.018385                             0.031158
+                       4   elastic_net_panel           8096           19 2020-01-01 2026-01-01 0.111116 0.086361 -0.025716 0.144003              0.614377                     0.614377                 0.685524              0.653903            0.035298               0.009582                      0.024462              0.112070                    0.756135                             0.010889
+                       4     historical_mean           8096           19 2020-01-01 2026-01-01 0.112340 0.087449 -0.026198 0.090512              0.585104                     0.585104                 0.664155              0.653903            0.035298               0.009099                      0.018278              0.113243                    0.559120                             0.000000
+                       4      ols_predictive           8096           19 2020-01-01 2026-01-01 0.112374 0.087479 -0.026283 0.090095              0.584857                     0.584857                 0.661932              0.653903            0.035298               0.009015                      0.018806              0.113157                    0.575726                            -0.000310
+                       4     always_positive           8096           19 2020-01-01 2026-01-01 0.970857 0.964702  0.964702      NaN              0.653903                     0.653903                 1.000000              0.653903            0.035298               1.000000                      0.035298              0.109143                    1.120319                            -7.642160
+
+================================================================================
+Forecast horizon h=5
+Panel: 11,371 rows | 19 countries | eval rows=7,979
+Running model: historical_mean
+  produced 11,371 predictions
+Running model: always_positive
+  produced 11,371 predictions
+Running model: ols_predictive
+  produced 11,371 predictions
+Running model: elastic_net_panel
+  produced 11,371 predictions
+Running model: distributed_lag
+  produced 11,371 predictions
+Running model: random_forest_panel
+  produced 11,371 predictions
+ forecast_horizon_months            model_id  n_predictions  n_countries   date_min   date_max     rmse      mae      bias     corr  directional_accuracy  active_directional_accuracy  predicted_positive_rate  actual_positive_rate  mean_actual_return  mean_predicted_return  strategy_mean_monthly_return  strategy_monthly_vol  strategy_annualized_sharpe  rmse_improvement_vs_historical_mean
+                       5 random_forest_panel           7979           19 2020-01-01 2025-12-01 0.116808 0.092249 -0.028675 0.325582              0.665622                     0.665622                 0.746585              0.677904            0.044469               0.015794                      0.045465              0.118854                    1.325107                             0.060489
+                       5     distributed_lag           7979           19 2020-01-01 2025-12-01 0.121376 0.096036 -0.033887 0.210851              0.625768                     0.625768                 0.656348              0.677904            0.044469               0.010582                      0.034291              0.122545                    0.969332                             0.023749
+                       5   elastic_net_panel           7979           19 2020-01-01 2025-12-01 0.123194 0.097470 -0.034002 0.135993              0.610102                     0.610102                 0.654719              0.677904            0.044469               0.010467                      0.028831              0.123944                    0.805811                             0.009128
+                       5     historical_mean           7979           19 2020-01-01 2025-12-01 0.124328 0.098355 -0.034382 0.096521              0.585412                     0.585412                 0.640306              0.677904            0.044469               0.010088                      0.021957              0.125344                    0.606811                             0.000000
+                       5      ols_predictive           7979           19 2020-01-01 2025-12-01 0.124383 0.098392 -0.034499 0.095921              0.587417                     0.587417                 0.635543              0.677904            0.044469               0.009971                      0.022175              0.125306                    0.613042                            -0.000440
+                       5     always_positive           7979           19 2020-01-01 2025-12-01 0.962941 0.955531  0.955531      NaN              0.677904                     0.677904                 1.000000              0.677904            0.044469               1.000000                      0.044469              0.119230                    1.292014                            -6.745135
+
+================================================================================
+Running MAD portfolio grid
